@@ -29,9 +29,9 @@
                     <dc-element>title</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Title</label>
+                    <label>Tytuł</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the name of the file.</hint>
+                    <hint>Podaj nazwę pliku.</hint>
                     <required>You must enter a name for this file</required>
                 </field>
             </row>
@@ -40,9 +40,9 @@
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <repeatable>true</repeatable>
-                    <label>Description</label>
+                    <label>Opis</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter a description for the file</hint>
+                    <hint>Podaj opis pliku</hint>
                     <required></required>
                 </field>
             </row>
@@ -57,9 +57,9 @@
                     <dc-element>contributor</dc-element>
                     <dc-qualifier>author</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Author</label>
+                    <label>Autor</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the author's name (Family name, Given names).</hint>
+                    <hint>Wpisz nazwisko i imię autora.</hint>
                     <required></required>
                 </field>
             </row>
@@ -69,10 +69,10 @@
                     <dc-element>title</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Title</label>
+                    <label>Tytuł</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the main title of the item.</hint>
-                    <required>You must enter a main title for this item.</required>
+                    <hint>Wpisz główny tytuł dla tej pozycji.</hint>
+                    <required>Musisz określić główny tytuł dla tej pozycji.</required>
                 </field>
             </row>
             <row>
