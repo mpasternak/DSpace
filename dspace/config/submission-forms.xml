@@ -193,9 +193,9 @@
                     <dc-qualifier></dc-qualifier>
                     <!-- An input-type of tag MUST be marked as repeatable -->
                     <repeatable>true</repeatable>
-                    <label>Subject Keywords</label>
+                    <label>Słowa kluczowe</label>
                     <input-type>tag</input-type>
-                    <hint>Enter appropriate subject keywords or phrases.</hint>
+                    <hint>Wybierz słowa kluczowe lub frazy</hint>
                     <required></required>
                     <vocabulary>srsc</vocabulary>
                 </field>
@@ -206,9 +206,9 @@
                     <dc-element>description</dc-element>
                     <dc-qualifier>abstract</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Abstract</label>
+                    <label>Streszczenie</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter the abstract of the item.</hint>
+                    <hint>Wpisz streszczenie dla tej pozycji</hint>
                     <required></required>
                 </field>
             </row>
@@ -218,9 +218,9 @@
                     <dc-element>description</dc-element>
                     <dc-qualifier>sponsorship</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Sponsors</label>
+                    <label>Zródło finansowania</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter the names of any sponsors and/or funding codes in the box.</hint>
+                    <hint>Wpisz źródło finansowania.</hint>
                     <required></required>
                 </field>
             </row>
@@ -230,9 +230,9 @@
                     <dc-element>description</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Description</label>
+                    <label>Opis</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter any other description or comments in this box.</hint>
+                    <hint>Wpisz opis pozycji.</hint>
                     <required></required>
                 </field>
             </row>
@@ -249,8 +249,8 @@
                     <relationship-type>isAuthorOfPublication</relationship-type>
                     <search-configuration>person</search-configuration>
                     <repeatable>true</repeatable>
-                    <label>Author</label>
-                    <hint>Enter the author's name (Family name, Given names).</hint>
+                    <label>Autor</label>
+                    <hint>Wpisz nazwisko i imię autora.</hint>
                     <linked-metadata-field>
                         <dc-schema>dc</dc-schema>
                         <dc-element>contributor</dc-element>
@@ -271,10 +271,10 @@
                     <dc-element>title</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Title</label>
+                    <label>Tytuł</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the main title of the item.</hint>
-                    <required>You must enter a main title for this item.</required>
+                    <hint>Wpisz główny tytuł dla tej pozycji.</hint>
+                    <required>Musisz wpisać tytuł.</required>
                 </field>
             </row>
             <row>
