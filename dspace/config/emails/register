@@ -6,6 +6,19 @@
 ##
 #set($subject = "${config.get('dspace.name')} Account Registration")
 #set($phone = ${config.get('mail.message.helpdesk.telephone')})
+Potwierdz rejestracje konta w ${config.get('dspace.name')}. W tym celu kliknij link ponizej:
+
+  ${params[0]}
+
+Jezeli potrzebujesz pomocy ze swoim kontem, skontaktuj sie z ${config.get("mail.helpdesk")}
+#if( $phone )
+lub zadzwon na numer ${phone}.
+#end
+
+Zespol ${config.get('dspace.name')}
+
+* * *
+
 To complete registration for a ${config.get('dspace.name')} account, please click the link below:
 
   ${params[0]}
