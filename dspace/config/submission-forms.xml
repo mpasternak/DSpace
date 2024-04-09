@@ -283,9 +283,9 @@
                     <dc-element>title</dc-element>
                     <dc-qualifier>alternative</dc-qualifier>
                     <repeatable>true</repeatable>
-                    <label>Other Titles</label>
+                    <label>Inne tytuły</label>
                     <input-type>onebox</input-type>
-                    <hint>If the item has any alternative titles, please enter them here.</hint>
+                    <hint>Jeżeli ta pozycja ma jakieś alternatywne tytuły, wpisz je tutaj.</hint>
                     <required></required>
                 </field>
             </row>
@@ -295,13 +295,13 @@
                     <dc-element>date</dc-element>
                     <dc-qualifier>issued</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Date of Issue</label>
+                    <label>Data wydania</label>
                     <style>col-sm-4</style>
                     <input-type>date</input-type>
-                    <hint>Please give the date of previous publication or public distribution.
-                        You can leave out the day and/or month if they aren't applicable.
+                    <hint>Wpisz proszę datę poprzedniej publikacji lub upublicznienia. Możesz pominąc miesiąc i dzień,
+                        jeżeli nie są istotne.
                     </hint>
-                    <required>You must enter at least the year.</required>
+                    <required>Musisz wpisać przynajmniej rok.</required>
                 </field>
 
                 <field>
@@ -309,10 +309,10 @@
                     <dc-element>publisher</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Publisher</label>
+                    <label>Wydawca</label>
                     <style>col-sm-8</style>
                     <input-type>onebox</input-type>
-                    <hint>Enter the name of the publisher of the previously issued instance of this item.</hint>
+                    <hint>Wpisz nazwę wydawcy dla poprzedniej publikacji tej pozycji.</hint>
                     <required></required>
                 </field>
             </row>
@@ -322,9 +322,9 @@
                     <dc-element>identifier</dc-element>
                     <dc-qualifier>citation</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Citation</label>
+                    <label>Cytowanie</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the standard citation for the previously issued instance of this item.</hint>
+                    <hint>Wpisz standardowy format cytowania dla poprzedniej publikacji tej pozycji.</hint>
                     <required></required>
                 </field>
             </row>
@@ -392,8 +392,8 @@
                 <relation-field>
                     <relationship-type>isPublicationOfAuthor</relationship-type>
                     <search-configuration>publication</search-configuration>
-                    <label>Publication</label>
-                    <hint>import a publicaton</hint>
+                    <label>Publikacja</label>
+                    <hint>importuj publikację</hint>
                     <externalsources>pubmed</externalsources>
                 </relation-field>
             </row>
@@ -401,18 +401,18 @@
                 <field>
                     <dc-schema>person</dc-schema>
                     <dc-element>familyName</dc-element>
-                    <label>Last name</label>
+                    <label>Nazwisko</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the last name of the person</hint>
+                    <hint>Wpisz nazwisko osoby</hint>
                 </field>
             </row>
             <row>
                 <field>
                     <dc-schema>person</dc-schema>
                     <dc-element>givenName</dc-element>
-                    <label>First name</label>
+                    <label>imię</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the first name of the person</hint>
+                    <hint>Wpisz imię osoby</hint>
                 </field>
             </row>
             <row>
@@ -421,7 +421,7 @@
                     <dc-element>email</dc-element>
                     <label>Email</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the email of the person</hint>
+                    <hint>Wpisz email osoby</hint>
                 </field>
             </row>
             <!--     <row>-->
@@ -438,9 +438,9 @@
                 <field>
                     <dc-schema>person</dc-schema>
                     <dc-element>birthDate</dc-element>
-                    <label>Birth date</label>
+                    <label>Data urodzenia</label>
                     <input-type>date</input-type>
-                    <hint>Enter the birth date of the person</hint>
+                    <hint>Wpisz datę urodzenia osoby</hint>
                 </field>
             </row>
 <!--            <row>-->
@@ -457,9 +457,9 @@
                 <field>
                     <dc-schema>person</dc-schema>
                     <dc-element>jobTitle</dc-element>
-                    <label>Job title</label>
+                    <label>Stanowisko</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the job title of the person</hint>
+                    <hint>Wpisz stanowisko osoby</hint>
                 </field>
             </row>
         </form>
@@ -470,9 +470,9 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>title</dc-element>
-                    <label>Name</label>
+                    <label>Nazwa</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the name of the project</hint>
+                    <hint>Wpisz nazwę projektu</hint>
                 </field>
             </row>
             <row>
@@ -481,7 +481,7 @@
                     <dc-element>identifier</dc-element>
                     <label>ID</label>
                     <input-type>onebox</input-type>
-                    <hint>Enter the id of the project</hint>
+                    <hint>Wpisz numer ID projektu</hint>
                 </field>
             </row>
 <!--            <row>-->
@@ -1079,9 +1079,9 @@
                     <dc-qualifier></dc-qualifier>
                     <!-- An input-type of tag MUST be marked as repeatable -->
                     <repeatable>true</repeatable>
-                    <label>Subject Keywords</label>
+                    <label>Słowa kluczowe</label>
                     <input-type>tag</input-type>
-                    <hint>Enter appropriate subject keywords or phrases.</hint>
+                    <hint>Wpisz słowa kluczowe lub frazy.</hint>
                     <required></required>
                     <vocabulary>srsc</vocabulary>
                 </field>
@@ -1110,9 +1110,9 @@
                     <dc-element>description</dc-element>
                     <dc-qualifier>abstract</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Abstract</label>
+                    <label>Streszczenie</label>
                     <input-type>textarea</input-type>
-                    <hint>Enter the abstract of the item.</hint>
+                    <hint>Wpisz streszenie dla tej pozycji.</hint>
                     <required></required>
                 </field>
             </row>
