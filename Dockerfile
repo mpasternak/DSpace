@@ -15,6 +15,7 @@ WORKDIR /app
 RUN mkdir /install \
     && chown -Rv dspace: /install \
     && chown -Rv dspace: /app
+RUN apt update && apt install -y git
 USER dspace
 # Copy the DSpace source code (from local machine) into the workdir (excluding .dockerignore contents)
 ADD --chown=dspace . /app/
