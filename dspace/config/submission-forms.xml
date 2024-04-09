@@ -1492,10 +1492,6 @@
                 <stored-value>pl</stored-value>
             </pair>
             <pair>
-                <displayed-value>nie dotyczy</displayed-value>
-                <stored-value></stored-value>
-            </pair>
-            <pair>
                 <displayed-value>Angielski (amerykański)</displayed-value>
                 <stored-value>en_US</stored-value>
             </pair>
@@ -1504,16 +1500,40 @@
                 <stored-value>en</stored-value>
             </pair>
             <pair>
-                <displayed-value>Hiszpański</displayed-value>
-                <stored-value>es</stored-value>
+                <displayed-value>Ukraiński</displayed-value>
+                <stored-value>ua</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Rosyjski</displayed-value>
+                <stored-value>ru</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Słowacki</displayed-value>
+                <stored-value>sk</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Węgierski</displayed-value>
+                <stored-value>hu</stored-value>
             </pair>
             <pair>
                 <displayed-value>Niemiecki</displayed-value>
                 <stored-value>de</stored-value>
             </pair>
             <pair>
+                <displayed-value>Czeski</displayed-value>
+                <stored-value>cz</stored-value>
+            </pair>
+            <pair>
                 <displayed-value>Francuski</displayed-value>
                 <stored-value>fr</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>nie dotyczy</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Hiszpański</displayed-value>
+                <stored-value>es</stored-value>
             </pair>
             <pair>
                 <displayed-value>Włoski</displayed-value>
