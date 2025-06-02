@@ -36,10 +36,10 @@ import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.dspace.app.client.DSpaceHttpClientFactory;
 import org.dspace.authorize.AuthorizeException;
 import org.dspace.content.DSpaceObject;
 import org.dspace.content.crosswalk.CrosswalkException;
@@ -400,7 +400,7 @@ public class DataCiteConnector
             log.error("Caught an AuthorizeException while disseminating DSO"
                     + " with type {} and ID {}. Giving up to reserve DOI {}.",
                     dso.getType(), dso.getID(), doi, ae);
-            throw new DOIIdentifierException("AuthorizeException occured while "
+            throw new DOIIdentifierException("AuthorizeException occurred while "
                                                  + "converting " + dSpaceObjectService.getTypeText(dso) + "/" + dso
                 .getID()
                                                  + " using crosswalk " + this.CROSSWALK_NAME + ".", ae,
@@ -409,7 +409,7 @@ public class DataCiteConnector
             log.error("Caught a CrosswalkException while reserving a DOI ({})"
                     + " for DSO with type {} and ID {}. Won't reserve the doi.",
                     doi, dso.getType(), dso.getID(), ce);
-            throw new DOIIdentifierException("CrosswalkException occured while "
+            throw new DOIIdentifierException("CrosswalkException occurred while "
                                                  + "converting " + dSpaceObjectService.getTypeText(dso) + "/" + dso
                 .getID()
                                                  + " using crosswalk " + this.CROSSWALK_NAME + ".", ce,
@@ -430,7 +430,7 @@ public class DataCiteConnector
                           + "crosswalk to generate the metadata used another DOI than "
                           + "the DOI we're reserving. Cannot reserve DOI {} for {} {}.",
                     doi, dSpaceObjectService.getTypeText(dso), dso.getID());
-            throw new IllegalStateException("An internal error occured while "
+            throw new IllegalStateException("An internal error occurred while "
                                                 + "generating the metadata. Unable to reserve doi, see logs "
                                                 + "for further information.");
         }
@@ -719,7 +719,7 @@ public class DataCiteConnector
         httpContext.setCredentialsProvider(credentialsProvider);
 
         HttpEntity entity = null;
-        try ( CloseableHttpClient httpclient = HttpClientBuilder.create().build(); ) {
+        try (CloseableHttpClient httpclient = DSpaceHttpClientFactory.getInstance().build()) {
             HttpResponse response = httpclient.execute(req, httpContext);
 
             StatusLine status = response.getStatusLine();
