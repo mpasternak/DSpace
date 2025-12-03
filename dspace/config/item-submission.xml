@@ -64,6 +64,12 @@
         <name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
         <name-map collection-entity-type="JournalIssue" submission-name="JournalIssue"/>
 
+        <!-- Publication type mappings - Book, Journal Article, Book Chapter, Thesis -->
+        <name-map collection-entity-type="Book" submission-name="Book"/>
+        <name-map collection-entity-type="JournalArticle" submission-name="JournalArticle"/>
+        <name-map collection-entity-type="BookChapter" submission-name="BookChapter"/>
+        <name-map collection-entity-type="Thesis" submission-name="Thesis"/>
+
         <!-- Example of configuration using a community handle to map an Item Submission Process.
 
             This configuration maps the submission process to the community's descendant
@@ -254,6 +260,30 @@
             <type>duplicates</type>
         </step-definition>
 
+        <!-- ================================================================= -->
+        <!-- PUBLICATION TYPE FORMS - Book, Journal Article, Book Chapter, Thesis -->
+        <!-- ================================================================= -->
+        <step-definition id="bookForm" mandatory="true">
+            <heading>submit.progressbar.describe.stepone</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+        <step-definition id="journalArticleForm" mandatory="true">
+            <heading>submit.progressbar.describe.stepone</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+        <step-definition id="bookChapterForm" mandatory="true">
+            <heading>submit.progressbar.describe.stepone</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+        <step-definition id="thesisForm" mandatory="true">
+            <heading>submit.progressbar.describe.stepone</heading>
+            <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+            <type>submission-form</type>
+        </step-definition>
+
     </step-definitions>
 
     <!-- The submission-definitions map lays out the detailed definition of -->
@@ -423,6 +453,43 @@
             <step id="collection"/>
             <step id="openaireOrganizationForm"/>
         </submission-process>
+
+        <!-- ================================================================= -->
+        <!-- PUBLICATION TYPE SUBMISSION PROCESSES -->
+        <!-- ================================================================= -->
+
+        <!-- Submission Process for Books -->
+        <submission-process name="Book">
+            <step id="collection"/>
+            <step id="bookForm"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!-- Submission Process for Journal Articles -->
+        <submission-process name="JournalArticle">
+            <step id="collection"/>
+            <step id="journalArticleForm"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!-- Submission Process for Book Chapters -->
+        <submission-process name="BookChapter">
+            <step id="collection"/>
+            <step id="bookChapterForm"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!-- Submission Process for Theses -->
+        <submission-process name="Thesis">
+            <step id="collection"/>
+            <step id="thesisForm"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
     </submission-definitions>
 
 </item-submission>

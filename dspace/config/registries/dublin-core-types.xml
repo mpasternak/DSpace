@@ -612,4 +612,33 @@
         <scope_note>The OpenAlex identifier</scope_note>
     </dc-type>
 
+    <!-- Bibliographic Citation fields for journal articles -->
+    <dc-type>
+        <schema>dc</schema>
+        <element>bibliographicCitation</element>
+        <qualifier>volume</qualifier>
+        <scope_note>Volume number of journal or series</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>bibliographicCitation</element>
+        <qualifier>issue</qualifier>
+        <scope_note>Issue number within a volume</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>bibliographicCitation</element>
+        <qualifier>startPage</qualifier>
+        <scope_note>First page of the article</scope_note>
+    </dc-type>
+
+    <dc-type>
+        <schema>dc</schema>
+        <element>bibliographicCitation</element>
+        <qualifier>endPage</qualifier>
+        <scope_note>Last page of the article</scope_note>
+    </dc-type>
+
 </dspace-dc-types>
