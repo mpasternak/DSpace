@@ -103,6 +103,19 @@
                     <required></required>
                 </field>
             </row>
+            <!-- DOI -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>doi</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>DOI</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz identyfikator DOI (np. 10.1000/xyz123).</hint>
+                    <required></required>
+                </field>
+            </row>
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -537,6 +550,19 @@
                     <label>Inne tytuły</label>
                     <input-type>onebox</input-type>
                     <hint>Jeżeli ta pozycja ma jakieś alternatywne tytuły, wpisz je tutaj.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <!-- DOI -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>doi</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>DOI</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz identyfikator DOI (np. 10.1000/xyz123).</hint>
                     <required></required>
                 </field>
             </row>
