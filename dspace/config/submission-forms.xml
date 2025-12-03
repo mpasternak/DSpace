@@ -380,6 +380,178 @@
                     <required></required>
                 </field>
             </row>
+
+            <!-- ================================================================= -->
+            <!-- TYPE-SPECIFIC FIELDS - pokazywane w zależności od wybranego typu -->
+            <!-- ================================================================= -->
+
+            <!-- BOOK: ISBN -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>isbn</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>ISBN</label>
+                    <type-bind>Book</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz numer ISBN książki.</hint>
+                    <required></required>
+                </field>
+            </row>
+
+            <!-- BOOK CHAPTER: Tytuł książki nadrzędnej -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>ispartof</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Tytuł książki</label>
+                    <type-bind>Book chapter</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz tytuł książki, w której znajduje się rozdział.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <!-- BOOK CHAPTER: Redaktor książki -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>editor</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Redaktor książki</label>
+                    <type-bind>Book chapter</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz nazwisko i imię redaktora książki.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <!-- BOOK CHAPTER: ISBN książki -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>isbn</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>ISBN książki</label>
+                    <type-bind>Book chapter</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz numer ISBN książki, w której znajduje się rozdział.</hint>
+                    <required></required>
+                </field>
+            </row>
+
+            <!-- ARTICLE: Tytuł czasopisma -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>ispartof</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Tytuł czasopisma</label>
+                    <type-bind>Article</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz pełną nazwę czasopisma.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <!-- ARTICLE: Tom, Zeszyt, Strony -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>bibliographicCitation</dc-element>
+                    <dc-qualifier>volume</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Tom</label>
+                    <style>col-sm-3</style>
+                    <type-bind>Article</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Numer tomu.</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>bibliographicCitation</dc-element>
+                    <dc-qualifier>issue</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Zeszyt/Numer</label>
+                    <style>col-sm-3</style>
+                    <type-bind>Article</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Numer zeszytu.</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>bibliographicCitation</dc-element>
+                    <dc-qualifier>startPage</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Strona od</label>
+                    <style>col-sm-3</style>
+                    <type-bind>Article</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Pierwsza strona.</hint>
+                    <required></required>
+                </field>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>bibliographicCitation</dc-element>
+                    <dc-qualifier>endPage</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Strona do</label>
+                    <style>col-sm-3</style>
+                    <type-bind>Article</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Ostatnia strona.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <!-- ARTICLE: ISSN -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <dc-qualifier>issn</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>ISSN</label>
+                    <type-bind>Article</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz numer ISSN czasopisma.</hint>
+                    <required></required>
+                </field>
+            </row>
+
+            <!-- THESIS: Promotor -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>advisor</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Promotor</label>
+                    <type-bind>Thesis</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz nazwisko i imię promotora pracy.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <!-- THESIS: Rodzaj pracy -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>type</dc-element>
+                    <dc-qualifier>thesis</dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Rodzaj pracy dyplomowej</label>
+                    <type-bind>Thesis</type-bind>
+                    <input-type value-pairs-name="thesis_types">dropdown</input-type>
+                    <hint>Wybierz rodzaj pracy dyplomowej.</hint>
+                    <required></required>
+                </field>
+            </row>
+
         </form>
 
         <!-- Form which defines the metadata page/section for depositing Person Entities -->
@@ -1322,10 +1494,10 @@
         </form>
 
         <!-- ================================================================= -->
-        <!-- FORMULARZE DLA TYPÓW PUBLIKACJI - Książka, Artykuł, Rozdział, Praca dyplomowa -->
+        <!-- FORMULARZE DLA TYPÓW PUBLIKACJI - NIEUŻYWANE: type-bind w Publication -->
+        <!-- Te formularze są zachowane na wypadek potrzeby, ale nie są mapowane -->
         <!-- ================================================================= -->
 
-        <!-- Formularz dla KSIĄŻKI (Book) -->
         <form name="bookForm">
             <!-- Autor -->
             <row>

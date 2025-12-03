@@ -64,11 +64,14 @@
         <name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
         <name-map collection-entity-type="JournalIssue" submission-name="JournalIssue"/>
 
-        <!-- Publication type mappings - Book, Journal Article, Book Chapter, Thesis -->
+        <!-- Publication type mappings - WYŁĄCZONE: używamy type-bind w formularzu Publication -->
+        <!-- Te typy są teraz obsługiwane przez encję Publication z dynamicznym wyświetlaniem pól -->
+        <!--
         <name-map collection-entity-type="Book" submission-name="Book"/>
         <name-map collection-entity-type="JournalArticle" submission-name="JournalArticle"/>
         <name-map collection-entity-type="BookChapter" submission-name="BookChapter"/>
         <name-map collection-entity-type="Thesis" submission-name="Thesis"/>
+        -->
 
         <!-- Example of configuration using a community handle to map an Item Submission Process.
 
@@ -261,8 +264,9 @@
         </step-definition>
 
         <!-- ================================================================= -->
-        <!-- PUBLICATION TYPE FORMS - Book, Journal Article, Book Chapter, Thesis -->
+        <!-- PUBLICATION TYPE FORMS - WYŁĄCZONE: używamy type-bind w Publication -->
         <!-- ================================================================= -->
+        <!--
         <step-definition id="bookForm" mandatory="true">
             <heading>submit.progressbar.describe.stepone</heading>
             <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
@@ -283,6 +287,7 @@
             <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
             <type>submission-form</type>
         </step-definition>
+        -->
 
     </step-definitions>
 
@@ -455,10 +460,9 @@
         </submission-process>
 
         <!-- ================================================================= -->
-        <!-- PUBLICATION TYPE SUBMISSION PROCESSES -->
+        <!-- PUBLICATION TYPE SUBMISSION PROCESSES - WYŁĄCZONE: używamy type-bind -->
         <!-- ================================================================= -->
-
-        <!-- Submission Process for Books -->
+        <!--
         <submission-process name="Book">
             <step id="collection"/>
             <step id="bookForm"/>
@@ -466,7 +470,6 @@
             <step id="license"/>
         </submission-process>
 
-        <!-- Submission Process for Journal Articles -->
         <submission-process name="JournalArticle">
             <step id="collection"/>
             <step id="journalArticleForm"/>
@@ -474,7 +477,6 @@
             <step id="license"/>
         </submission-process>
 
-        <!-- Submission Process for Book Chapters -->
         <submission-process name="BookChapter">
             <step id="collection"/>
             <step id="bookChapterForm"/>
@@ -482,13 +484,13 @@
             <step id="license"/>
         </submission-process>
 
-        <!-- Submission Process for Theses -->
         <submission-process name="Thesis">
             <step id="collection"/>
             <step id="thesisForm"/>
             <step id="upload"/>
             <step id="license"/>
         </submission-process>
+        -->
 
     </submission-definitions>
 
