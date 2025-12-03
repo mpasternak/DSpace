@@ -63,16 +63,32 @@
                     <required></required>
                 </field>
             </row>
+            <!-- Tytuł PL -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>title</dc-element>
                     <dc-qualifier></dc-qualifier>
+                    <language>pl</language>
                     <repeatable>false</repeatable>
-                    <label>Tytuł</label>
+                    <label>Tytuł (PL)</label>
                     <input-type>onebox</input-type>
-                    <hint>Wpisz główny tytuł dla tej pozycji.</hint>
-                    <required>Musisz określić główny tytuł dla tej pozycji.</required>
+                    <hint>Wpisz tytuł w języku polskim.</hint>
+                    <required>Musisz wpisać tytuł.</required>
+                </field>
+            </row>
+            <!-- Tytuł EN -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <language>en</language>
+                    <repeatable>false</repeatable>
+                    <label>Title (EN)</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the title in English.</hint>
+                    <required></required>
                 </field>
             </row>
             <row>
@@ -83,7 +99,7 @@
                     <repeatable>true</repeatable>
                     <label>Tytuł alternatywny</label>
                     <input-type>onebox</input-type>
-                    <hint>Jeżeli ta pozycja ma jakieś alternatywne tytułu, wpisz je tutaj. </hint>
+                    <hint>Jeżeli ta pozycja ma jakieś alternatywne tytuły, wpisz je tutaj.</hint>
                     <required></required>
                 </field>
             </row>
@@ -358,53 +374,100 @@
         <!-- Form which defines the second page/section of the "traditional" DSpace submission process,
              often used when depositing normal Items. -->
         <form name="traditionalpagetwo">
+            <!-- Słowa kluczowe PL -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>subject</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <!-- An input-type of tag MUST be marked as repeatable -->
+                    <language>pl</language>
                     <repeatable>true</repeatable>
-                    <label>Słowa kluczowe</label>
+                    <label>Słowa kluczowe (PL)</label>
                     <input-type>tag</input-type>
-                    <hint>Wybierz słowa kluczowe lub frazy</hint>
+                    <hint>Wpisz słowa kluczowe w języku polskim.</hint>
                     <required></required>
-                    <vocabulary>srsc</vocabulary>
                 </field>
             </row>
+            <!-- Słowa kluczowe EN -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <language>en</language>
+                    <repeatable>true</repeatable>
+                    <label>Keywords (EN)</label>
+                    <input-type>tag</input-type>
+                    <hint>Enter keywords in English.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <!-- Streszczenie PL -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier>abstract</dc-qualifier>
+                    <language>pl</language>
                     <repeatable>false</repeatable>
-                    <label>Streszczenie</label>
+                    <label>Streszczenie (PL)</label>
                     <input-type>textarea</input-type>
-                    <hint>Wpisz streszczenie dla tej pozycji</hint>
+                    <hint>Wpisz streszczenie w języku polskim.</hint>
                     <required></required>
                 </field>
             </row>
+            <!-- Streszczenie EN -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <language>en</language>
+                    <repeatable>false</repeatable>
+                    <label>Abstract (EN)</label>
+                    <input-type>textarea</input-type>
+                    <hint>Enter abstract in English.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <!-- Źródło finansowania -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier>sponsorship</dc-qualifier>
                     <repeatable>false</repeatable>
-                    <label>Zródło finansowania</label>
+                    <label>Źródło finansowania</label>
                     <input-type>textarea</input-type>
                     <hint>Wpisz źródło finansowania.</hint>
                     <required></required>
                 </field>
             </row>
+            <!-- Opis PL -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier></dc-qualifier>
+                    <language>pl</language>
                     <repeatable>false</repeatable>
-                    <label>Opis</label>
+                    <label>Opis (PL)</label>
                     <input-type>textarea</input-type>
-                    <hint>Wpisz opis pozycji.</hint>
+                    <hint>Wpisz opis pozycji w języku polskim.</hint>
+                    <required></required>
+                </field>
+            </row>
+            <!-- Opis EN -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <language>en</language>
+                    <repeatable>false</repeatable>
+                    <label>Description (EN)</label>
+                    <input-type>textarea</input-type>
+                    <hint>Enter description in English.</hint>
                     <required></required>
                 </field>
             </row>
@@ -437,16 +500,32 @@
                     <!--<regex>\w+(,)+\w+</regex>-->
                 </relation-field>
             </row>
+            <!-- Tytuł PL -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>title</dc-element>
                     <dc-qualifier></dc-qualifier>
+                    <language>pl</language>
                     <repeatable>false</repeatable>
-                    <label>Tytuł</label>
+                    <label>Tytuł (PL)</label>
                     <input-type>onebox</input-type>
-                    <hint>Wpisz główny tytuł dla tej pozycji.</hint>
+                    <hint>Wpisz tytuł w języku polskim.</hint>
                     <required>Musisz wpisać tytuł.</required>
+                </field>
+            </row>
+            <!-- Tytuł EN -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <language>en</language>
+                    <repeatable>false</repeatable>
+                    <label>Title (EN)</label>
+                    <input-type>onebox</input-type>
+                    <hint>Enter the title in English.</hint>
+                    <required></required>
                 </field>
             </row>
             <row>
