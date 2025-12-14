@@ -136,10 +136,18 @@ Located in `dspace-server-webapp/src/main/java/org/dspace/app/rest/`:
 
 ### Generated Files
 - **DO NOT EDIT `submission-forms.xml`** - This is a generated file that should not be manually modified
-- **Only edit the source files in `submission-forms-parts/` directory**:
-  - `form-traditional.xml`
-  - `form-openaire.xml`
-  - `form-entities.xml`
-  - `form-bitstream-metadata.xml`
-  - `value-pairs.xml`
-- The main `submission-forms.xml` is generated/processed from these modular parts during build or deployment
+- **DO NOT EDIT `item-submission.xml`** - This is also a generated file built from modular parts
+- **Only edit the source files in these directories**:
+  - `submission-forms-parts/` directory for form definitions:
+    - `form-traditional.xml`
+    - `form-openaire.xml`
+    - `form-entities.xml`
+    - `form-bitstream-metadata.xml`
+    - `value-pairs.xml`
+  - `item-submission-parts/` directory for submission process definitions:
+    - `step-definitions.xml` - step definitions
+    - `submission-definitions.xml` - submission process flows
+    - `submission-map.xml` - collection to process mappings
+- These main files are generated/processed from their modular parts during build or deployment:
+  - `submission-forms.xml` (from `submission-forms.master.xml`)
+  - `item-submission.xml` (from `item-submission.master.xml`)

@@ -12,6 +12,8 @@
             <!--Step will be to Describe the item. -->
             <step id="traditionalpageone"/>
             <step id="traditionalpagetwo"/>
+            <step id="traditionalpagethree"/>
+            <step id="traditionalpagefour"/>
 
             <!-- Uncomment this step to allow the user to embargo or access restrict the entire item -->
             <!-- <step id="itemAccessConditions"/> -->
@@ -50,6 +52,8 @@
             <!-- Now uses traditional forms (same as default submission) -->
             <step id="traditionalpageone"/>
             <step id="traditionalpagetwo"/>
+            <step id="traditionalpagethree"/>
+            <step id="traditionalpagefour"/>
             <step id="upload"/>
             <step id="license"/>
         </submission-process>
