@@ -177,6 +177,18 @@
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier/>
+                    <repeatable>false</repeatable>
+                    <label>Prawa dostępu</label>
+                    <input-type value-pairs-name="openaire_rights">dropdown</input-type>
+                    <hint>Wybierz poziom dostępu do tej pozycji.</hint>
+                    <required>Musisz wybrać poziom dostępu.</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
                     <dc-element>type</dc-element>
                     <dc-qualifier/>
                     <repeatable>true</repeatable>
@@ -360,7 +372,7 @@
                     <dc-qualifier/>
                     <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
-                    <label>Słowa kluczowe (tłumaczenie)</label>
+                    <label>Słowa kluczowe</label>
                     <input-type>onebox</input-type>
                     <hint>Wpisz słowa kluczowe i wybierz język (oddzielone przecinkami).</hint>
                     <required/>
@@ -394,7 +406,7 @@
                     <dc-qualifier>abstract</dc-qualifier>
                     <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
-                    <label>Streszczenie (tłumaczenie)</label>
+                    <label>Streszczenie</label>
                     <input-type>textarea</input-type>
                     <hint>Wpisz streszczenie i wybierz język.</hint>
                     <required/>
@@ -444,7 +456,7 @@
                     <dc-qualifier/>
                     <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
-                    <label>Opis (tłumaczenie)</label>
+                    <label>Opis</label>
                     <input-type>textarea</input-type>
                     <hint>Wpisz opis i wybierz język.</hint>
                     <required/>
@@ -1523,12 +1535,12 @@
                 <stored-value>pl</stored-value>
             </pair>
             <pair>
-                <displayed-value>Angielski (amerykański)</displayed-value>
-                <stored-value>en_US</stored-value>
-            </pair>
-            <pair>
                 <displayed-value>Angielski</displayed-value>
                 <stored-value>en</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Angielski (amerykański)</displayed-value>
+                <stored-value>en_US</stored-value>
             </pair>
             <pair>
                 <displayed-value>Ukraiński</displayed-value>

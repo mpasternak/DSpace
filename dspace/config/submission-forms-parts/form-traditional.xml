@@ -120,6 +120,18 @@
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
+                    <dc-element>rights</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Prawa dostępu</label>
+                    <input-type value-pairs-name="openaire_rights">dropdown</input-type>
+                    <hint>Wybierz poziom dostępu do tej pozycji.</hint>
+                    <required>Musisz wybrać poziom dostępu.</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
                     <dc-element>type</dc-element>
                     <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
