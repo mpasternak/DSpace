@@ -131,3 +131,15 @@ Located in `dspace-server-webapp/src/main/java/org/dspace/app/rest/`:
 - **SAML2**: Authentication
 - **IIIF**: Image serving
 - **Solr**: Search and discovery
+
+## Important Notes for Claude
+
+### Generated Files
+- **DO NOT EDIT `submission-forms.xml`** - This is a generated file that should not be manually modified
+- **Only edit the source files in `submission-forms-parts/` directory**:
+  - `form-traditional.xml`
+  - `form-openaire.xml`
+  - `form-entities.xml`
+  - `form-bitstream-metadata.xml`
+  - `value-pairs.xml`
+- The main `submission-forms.xml` is generated/processed from these modular parts during build or deployment

@@ -309,7 +309,10 @@
                     <required></required>
                 </field>
             </row>
+        </form>
 
+        <!-- Form which defines the third page/section of the "traditional" DSpace submission process. -->
+        <form name="traditionalpagethree">
             <!-- ================================================================= -->
             <!-- STRESZCZENIE / ABSTRACT -->
             <!-- ================================================================= -->
@@ -340,7 +343,10 @@
                     <required></required>
                 </field>
             </row>
+        </form>
 
+        <!-- Form which defines the fourth page/section of the "traditional" DSpace submission process. -->
+        <form name="traditionalpagefour">
             <!-- ================================================================= -->
             <!-- ŹRÓDŁO FINANSOWANIA -->
             <!-- ================================================================= -->
