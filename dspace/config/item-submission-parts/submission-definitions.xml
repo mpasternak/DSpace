@@ -1,0 +1,188 @@
+    <submission-definitions>
+
+        <!--This "traditional" process defines the DEFAULT item submission process -->
+        <submission-process name="traditional">
+            <!--Uncommment to display the SAMPLE step as your first step -->
+            <!--<step id="sample"/> -->
+
+            <step id="collection"/>
+            <!-- To include the 'Show Identifiers' step, uncomment the line below. Make sure
+                 that identifiers.cfg and identifier-service.xml are properly configured. -->
+            <!--<step id="identifiers"/>-->
+            <!--Step will be to Describe the item. -->
+            <step id="traditionalpageone"/>
+            <step id="traditionalpagetwo"/>
+
+            <!-- Uncomment this step to allow the user to embargo or access restrict the entire item -->
+            <!-- <step id="itemAccessConditions"/> -->
+
+            <!-- Uncomment this step to show when appropriate publisher policies retrieved from SHERPA/RoMEO -->
+            <!-- <step id="sherpaPolicies"/> -->
+
+            <!-- To include the 'Duplicate Detection' step, uncomment the line below. Make sure
+                 that duplicate-detection.cfg is properly configured and items have been reindexed since
+                 enabling the feature -->
+            <!-- <step id="duplicates"/> -->
+
+            <!--Step will be COAR Notify services to the item -->
+            <!-- <step id="coarnotify"/> -->
+
+            <!--Step will be to Upload the item -->
+            <step id="upload"/>
+
+            <!-- <step id="extractionstep"/> -->
+
+            <!-- Uncomment this step to allow the user to select a Creative Commons License -->
+            <!-- <step id="cclicense"/> -->
+
+            <!--Step will be to Sign off on the required DSpace License agreement -->
+            <step id="license"/>
+        </submission-process>
+
+        <!--
+        Submission Process for 'Publication' Entities.
+        These are not to be confused with default Items, as Publications may be linked with other Entities
+        (e.g. Person, JournalIssue, etc).
+        To enable: create a collection for Publications and add it to the <submission-map> tag linking to this process
+         -->
+        <submission-process name="Publication">
+            <step id="collection"/>
+            <!-- Now uses traditional forms (same as default submission) -->
+            <step id="traditionalpageone"/>
+            <step id="traditionalpagetwo"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!--
+        Submission Process for 'Person' Entities
+        To enable: create a collection for Persons and add it to the <submission-map> tag linking to this process
+         -->
+        <submission-process name="Person">
+            <step id="collection"/>
+            <step id="personStep"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!--
+        Submission Process for 'Pproject' Entities
+        To enable: create a collection for Projects and add it to the <submission-map> tag linking to this process
+         -->
+        <submission-process name="Project">
+            <step id="collection"/>
+            <step id="projectStep"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!--
+        Submission Process for 'OrgUnit' Entities
+        To enable: create a collection for OrgUnits and add it to the <submission-map> tag linking to this process
+         -->
+        <submission-process name="OrgUnit">
+            <step id="collection"/>
+            <step id="orgUnitStep"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!--
+        Submission Process for 'Journal' Entities
+        To enable: create a collection for Journals and add it to the <submission-map> tag linking to this process
+         -->
+        <submission-process name="Journal">
+            <step id="collection"/>
+            <step id="journalStep"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!--
+        Submission Process for 'JournalVolume' Entities
+        To enable: create a collection for JournalVolumes and add it to the <submission-map> tag linking to this process
+         -->
+        <submission-process name="JournalVolume">
+            <step id="collection"/>
+            <step id="journalVolumeStep"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!--
+        Submission Process for 'JournalIssues' Entities
+        To enable: create a collection for JournalIssues and add it to the <submission-map> tag linking to this process
+         -->
+        <submission-process name="JournalIssue">
+            <step id="collection"/>
+            <step id="journalIssueStep"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <!-- Openaire submission processes -->
+        <submission-process name="openairePublicationSubmission">
+            <step id="collection"/>
+
+            <!--Step will be to Describe the item. -->
+            <step id="openairePublicationPageoneForm"/>
+            <step id="openairePublicationPagetwoForm"/>
+
+            <!--Step will be to Upload the item -->
+            <!-- step id="upload-with-embargo"/-->
+            <step id="upload"/>
+
+            <!--Step will be to Sign off on the License -->
+            <step id="license"/>
+
+            <!-- Step allows the user to select a Creative Commons License -->
+            <!-- Required for OpenAIREv4 support -->
+            <step id="cclicense"/>
+        </submission-process>
+        <submission-process name="openairePersonSubmission">
+            <step id="collection"/>
+            <step id="openairePersonForm"/>
+        </submission-process>
+        <submission-process name="openaireProjectSubmission">
+            <step id="collection"/>
+            <step id="openaireProjectForm"/>
+        </submission-process>
+        <submission-process name="openaireOrganizationSubmission">
+            <step id="collection"/>
+            <step id="openaireOrganizationForm"/>
+        </submission-process>
+
+        <!-- ================================================================= -->
+        <!-- PUBLICATION TYPE SUBMISSION PROCESSES - WYŁĄCZONE: używamy type-bind -->
+        <!-- ================================================================= -->
+        <!--
+        <submission-process name="Book">
+            <step id="collection"/>
+            <step id="bookForm"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <submission-process name="JournalArticle">
+            <step id="collection"/>
+            <step id="journalArticleForm"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <submission-process name="BookChapter">
+            <step id="collection"/>
+            <step id="bookChapterForm"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+
+        <submission-process name="Thesis">
+            <step id="collection"/>
+            <step id="thesisForm"/>
+            <step id="upload"/>
+            <step id="license"/>
+        </submission-process>
+        -->
+
+    </submission-definitions>

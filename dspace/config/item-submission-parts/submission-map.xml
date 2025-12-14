@@ -1,0 +1,66 @@
+    <submission-map>
+        <!-- Default submission process -->
+        <name-map collection-handle="default" submission-name="traditional"/>
+
+        <!-- Sample Entities Collection configuration based on the demo Entities dataset available at:
+             https://github.com/DSpace-Labs/AIP-Files/releases/tag/demo-entities-data
+             This sets up the following Entity-based Collections in that dataset:
+                "Publication" Collections = "Publications" -> "Articles", "Books", "Publications 2", & "Theses"
+                "OrgUnit" Collection = "Related Objects" -> "OrgUnits"
+                "Person" Collections = "Related Objects" -> "People" & "People 2"
+                "Project" Collections = "Related Objects" -> "Projects" & "Projects 2"
+                "Journal" Collection = "Compound Journals" -> "Journals"
+                "Journal Volume" Collection = "Compound Journals" -> "Journal Volumes"
+                "Journal Issue" Collection = "Compound Journals" ->  "Journal Issues"
+             If you are using that demo dataset, you can simply uncomment the below configuration to enable Entity
+             submission into all of the above Collections.
+        -->
+        <!--
+        <name-map collection-handle="123456789/3" submission-name="Publication"/>
+        <name-map collection-handle="123456789/4" submission-name="Publication"/>
+        <name-map collection-handle="123456789/281" submission-name="Publication"/>
+        <name-map collection-handle="123456789/5" submission-name="Publication"/>
+        <name-map collection-handle="123456789/8" submission-name="OrgUnit"/>
+        <name-map collection-handle="123456789/6" submission-name="Person"/>
+        <name-map collection-handle="123456789/279" submission-name="Person"/>
+        <name-map collection-handle="123456789/7" submission-name="Project"/>
+        <name-map collection-handle="123456789/280" submission-name="Project"/>
+        <name-map collection-handle="123456789/28" submission-name="Journal"/>
+        <name-map collection-handle="123456789/29" submission-name="JournalVolume"/>
+        <name-map collection-handle="123456789/30" submission-name="JournalIssue"/>
+        -->
+        <!-- These configurations enable default submission forms per Entity type 
+            
+            The  collection-entity-type will be the entity-type attribute associated with a collection,
+            typically the entity name that is associated with a collection if any created or loaded 
+            (that is usually specified in relationship-types.xml).
+            - - - - - -
+            PLEASE NOTICE THAT YOU WILL HAVE TO RESTART DSPACE
+            - - - - - -
+        -->
+        <name-map collection-entity-type="Publication" submission-name="Publication"/>
+        <name-map collection-entity-type="Person" submission-name="Person"/>
+        <name-map collection-entity-type="Project" submission-name="Project"/>
+        <name-map collection-entity-type="OrgUnit" submission-name="OrgUnit"/>
+        <name-map collection-entity-type="Journal" submission-name="Journal"/>
+        <name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
+        <name-map collection-entity-type="JournalIssue" submission-name="JournalIssue"/>
+
+        <!-- Publication type mappings - WYŁĄCZONE: używamy type-bind w formularzu Publication -->
+        <!-- Te typy są teraz obsługiwane przez encję Publication z dynamicznym wyświetlaniem pól -->
+        <!--
+        <name-map collection-entity-type="Book" submission-name="Book"/>
+        <name-map collection-entity-type="JournalArticle" submission-name="JournalArticle"/>
+        <name-map collection-entity-type="BookChapter" submission-name="BookChapter"/>
+        <name-map collection-entity-type="Thesis" submission-name="Thesis"/>
+        -->
+
+        <!-- Example of configuration using a community handle to map an Item Submission Process.
+
+            This configuration maps the submission process to the community's descendant
+            collections that do not have a mapping defined by collection-handle or entity-type
+
+        <name-map community-handle="123456789/1234" submission-name="xxxx"/>
+        -->
+
+    </submission-map>

@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE item-submission SYSTEM "item-submission.dtd">
-
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE item-submission SYSTEM "item-submission.dtd" [
+<!ENTITY submission-map SYSTEM "item-submission-parts/submission-map.xml">
+<!ENTITY step-definitions SYSTEM "item-submission-parts/step-definitions.xml">
+<!ENTITY submission-definitions SYSTEM "item-submission-parts/submission-definitions.xml">
+]>
 <!-- Configurable Submission configuration file -->
-
 <!-- This XML configuration file allows you to configure the ordering -->
 <!-- and number of the steps that occur in the Item Submission Process. -->
 <item-submission>
@@ -16,7 +18,7 @@
     <!-- never a collection), here mapped to "traditional". Any collection -->
     <!-- which does not appear in this map will be associated with the mapping -->
     <!-- for handle "default". -->
-    <submission-map>
+        <submission-map>
         <!-- Default submission process -->
         <name-map collection-handle="default" submission-name="traditional"/>
 
@@ -85,6 +87,7 @@
 
 
 
+
     <!-- The 'step-definitions' allows you to define steps which you may wish -->
     <!-- to "share" amongst multiple submission-item definitions. In order to -->
     <!-- share the same step definition, you can refer to it by its unique id -->
@@ -99,18 +102,23 @@
     <!-- 'org.dspace.app.rest.submit.RestProcessingStep' -->
     <!-- (or one of the org.dspace.rest.submit.step.* classes) -->
     <!-- This property should reference the full path of the class -->
-    <!-- (e.g. org.dspace.app.rest.submit.step.MyCustomStep) -->
+    <!-- (e.g. org.dspace.app.rest.submit.step.DescribeStep) -->
+    <!-- This property is REQUIRED for all steps! -->
     <!-- -->
     <!-- The following properties are OPTIONAL for each <step-definition>: -->
-    <!-- <heading> - References the message key, from the -->
-    <!-- Messages.properties -->
-    <!-- -->
-    <step-definitions>
+    <!-- <heading> - References the message key, from the i18n file for the -->
+    <!-- configuration specified in 'config.default.locale' -->
+    <!-- (dspace.cfg). Message keys are of the form: -->
+    <!-- "submit.progressbar.<stepname>" -->
+    <!-- (e.g. submit.progressbar.describe) -->
+    <!-- <type> - The string that defines the type of the current step. This -->
+    <!-- type is used by the submission UI to properly render the step. -->
+        <step-definitions>
         <!-- The "collection" step is a "special step" which is *REQUIRED* -->
         <!-- In DSpace, all submitted items must be immediately assigned -->
         <!-- to a collection. This step ensures that a collection is always selected. -->
         <step-definition id="collection">
-            <heading></heading>
+            <heading/>
             <processing-class>org.dspace.app.rest.submit.step.CollectionStep</processing-class>
             <type>collection</type>
         </step-definition>
@@ -291,21 +299,33 @@
 
     </step-definitions>
 
+
+
     <!-- The submission-definitions map lays out the detailed definition of -->
-    <!-- all the Item Submission Processes (and the ordering of their steps). -->
-    <!-- Each separate "submission-process" has a unique name as an attribute, -->
-    <!-- which matches one of the names in the process-map. One named -->
-    <!-- "submit-process" has the name "traditional"; as this name suggests, -->
-    <!-- it is the default item submission process, which gets used when -->
-    <!-- the specified collection has no correspondingly named submit-process. -->
+    <!-- all the Item Submission Processes (step-by-step). -->
     <!-- -->
-    <!-- Each submit-process contains an ordered set of steps; each step -->
-    <!-- defines one "step" occurring during the process of submitting an -->
-    <!-- item. A step MUST be referenced by 'id' (it must -->
+    <!-- Each "submission-process" has a unique name as an attribute, used to -->
+    <!-- associate it with collections or communities in the <submission-map>. -->
+    <!-- -->
+    <!-- Each <submission-process> contains an ordered set of steps. Steps -->
+    <!-- MUST have a <step> element, which references the unique "id" -->
+    <!-- attribute of a step defined in the <step-definitions> section. Steps -->
+    <!-- MAY include an optional <heading> element to specify the step's label -->
+    <!-- in the progress bar (defaults to the step-definition's heading if not -->
+    <!-- provided). -->
+    <!-- -->
+    <!-- For special use cases, a step element MAY be directly embedded in the -->
+    <!-- submission-process (instead of referring to a step-definition by id). -->
+    <!-- In this case, the step element MUST include all required child -->
+    <!-- elements (as defined above in <step-definitions>). However, this is -->
+    <!-- NOT recommended as it prevents sharing/reuse of steps across -->
+    <!-- submission processes. Ideally, all steps should be defined in -->
+    <!-- <step-definitions> and referenced by id. -->
+    <!-- -->
+    <!-- Each step-definition should also be referenced in a <submission-definitions> element. -->
+    <!-- This is the "submission-process" that each collection or community uses (as -->
     <!-- be defined in <step-definitions> above). -->
-    <!-- -->
-    <!-- -->
-    <submission-definitions>
+        <submission-definitions>
 
         <!--This "traditional" process defines the DEFAULT item submission process -->
         <submission-process name="traditional">
@@ -354,8 +374,8 @@
          -->
         <submission-process name="Publication">
             <step id="collection"/>
-            <!-- Publications use a custom first step, but share page 2 with "traditional" Item form -->
-            <step id="publicationStep"/>
+            <!-- Now uses traditional forms (same as default submission) -->
+            <step id="traditionalpageone"/>
             <step id="traditionalpagetwo"/>
             <step id="upload"/>
             <step id="license"/>
@@ -493,5 +513,6 @@
         -->
 
     </submission-definitions>
+
 
 </item-submission>

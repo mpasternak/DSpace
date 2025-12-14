@@ -1,0 +1,671 @@
+    <form-value-pairs>
+        <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
+            <pair>
+                <displayed-value>ISSN</displayed-value>
+                <stored-value>issn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value>other</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISMN</displayed-value>
+                <stored-value>ismn</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Gov't Doc #</displayed-value>
+                <stored-value>govdoc</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>URI</displayed-value>
+                <stored-value>uri</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISBN</displayed-value>
+                <stored-value>isbn</stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="common_types" dc-term="type">
+            <pair>
+                <displayed-value>Animation</displayed-value>
+                <stored-value>Animation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Article</displayed-value>
+                <stored-value>Article</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Book</displayed-value>
+                <stored-value>Book</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Book chapter</displayed-value>
+                <stored-value>Book chapter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Dataset</displayed-value>
+                <stored-value>Dataset</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Learning Object</displayed-value>
+                <stored-value>Learning Object</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Image</displayed-value>
+                <stored-value>Image</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Image, 3-D</displayed-value>
+                <stored-value>Image, 3-D</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Map</displayed-value>
+                <stored-value>Map</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Musical Score</displayed-value>
+                <stored-value>Musical Score</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Plan or blueprint</displayed-value>
+                <stored-value>Plan or blueprint</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Preprint</displayed-value>
+                <stored-value>Preprint</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Presentation</displayed-value>
+                <stored-value>Presentation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Recording, acoustical</displayed-value>
+                <stored-value>Recording, acoustical</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Recording, musical</displayed-value>
+                <stored-value>Recording, musical</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Recording, oral</displayed-value>
+                <stored-value>Recording, oral</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Software</displayed-value>
+                <stored-value>Software</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Technical Report</displayed-value>
+                <stored-value>Technical Report</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Thesis</displayed-value>
+                <stored-value>Thesis</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Video</displayed-value>
+                <stored-value>Video</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Working Paper</displayed-value>
+                <stored-value>Working Paper</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value>Other</stored-value>
+            </pair>
+        </value-pairs>
+
+        <!-- default language order: (from dspace 1.2.1)
+             "en_US", "en", "es", "de", "fr", "it", "ja", "zh", "other", ""
+          -->
+        <value-pairs value-pairs-name="common_iso_languages" dc-term="language_iso">
+            <pair>
+                <displayed-value>Polski</displayed-value>
+                <stored-value>pl</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Angielski (amerykański)</displayed-value>
+                <stored-value>en_US</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Angielski</displayed-value>
+                <stored-value>en</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ukraiński</displayed-value>
+                <stored-value>ua</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Rosyjski</displayed-value>
+                <stored-value>ru</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Słowacki</displayed-value>
+                <stored-value>sk</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Węgierski</displayed-value>
+                <stored-value>hu</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Niemiecki</displayed-value>
+                <stored-value>de</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Czeski</displayed-value>
+                <stored-value>cz</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Francuski</displayed-value>
+                <stored-value>fr</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>nie dotyczy</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Hiszpański</displayed-value>
+                <stored-value>es</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Włoski</displayed-value>
+                <stored-value>it</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Japoński</displayed-value>
+                <stored-value>ja</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Chiński</displayed-value>
+                <stored-value>zh</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Portugalski</displayed-value>
+                <stored-value>pt</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Turecki</displayed-value>
+                <stored-value>tr</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>(Inny)</displayed-value>
+                <stored-value>other</stored-value>
+            </pair>
+        </value-pairs>
+
+        <!-- Openaire specific value pairs -->
+
+        <value-pairs value-pairs-name="openaire_license_types" dc-term="license">
+
+            <!-- Based on: http://openaire-guidelines-for-literature-repository-managers.readthedocs.io/en/latest/field_licensecondition.html#dc-rightslicensecondition -->
+
+            <pair>
+                <displayed-value>Bez licencji</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Uznanie autorstwa (CC-BY)</displayed-value>
+                <stored-value>https://creativecommons.org/licenses/by/4.0/legalcode.pl</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Uznanie autorstwa - Bez utworów zależnych (CC-BY-ND)</displayed-value>
+                <stored-value>https://creativecommons.org/licenses/by-nd/4.0/legalcode.pl</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Uznanie autorstwa - Na tych samych warunkach (CC-BY-SA)</displayed-value>
+                <stored-value>https://creativecommons.org/licenses/by-sa/4.0/legalcode.pl</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Uznanie autorstwa - Użycie niekomercyjne (CC-BY-NC)</displayed-value>
+                <stored-value>https://creativecommons.org/licenses/by-nc/4.0/legalcode.pl</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Uznanie autorstwa - Użycie niekomercyjne - Bez utworów zależnych (CC-BY-NC-ND)</displayed-value>
+                <stored-value>https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.pl</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Uznanie autorstwa - Użycie niekomercyjne - Na tych samych warunkach (CC-BY-NC-SA)</displayed-value>
+                <stored-value>https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.pl</stored-value>
+            </pair>
+            <!-- Add here other licenses -->
+            <pair>
+                <displayed-value>Inna</displayed-value>
+                <stored-value>other</stored-value>
+            </pair>
+
+        </value-pairs>
+
+        <!-- Openaire document types
+             https://openaire-guidelines-for-literature-repository-managers.readthedocs.io/en/v4.0.0/field_publicationtype.html
+             Based on COAR Vocabularies -> Controlled Vocabulary for Resource Type Genres (Version 2.0):
+             http://vocabularies.coar-repositories.org/documentation/resource_types/
+        -->
+        <value-pairs value-pairs-name="openaire_types" dc-term="type">
+            <pair>
+                <displayed-value>Interactive Resource</displayed-value>
+                <stored-value>interactive resource</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Website</displayed-value>
+                <stored-value>website</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Dataset</displayed-value>
+                <stored-value>dataset</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Interview</displayed-value>
+                <stored-value>interview</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Image</displayed-value>
+                <stored-value>image</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Moving Image</displayed-value>
+                <stored-value>moving image</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Video</displayed-value>
+                <stored-value>video</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Still Image</displayed-value>
+                <stored-value>still image</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value>other</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Software</displayed-value>
+                <stored-value>software</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Research Software</displayed-value>
+                <stored-value>research software</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Workflow</displayed-value>
+                <stored-value>workflow</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Cartographic Material</displayed-value>
+                <stored-value>cartographic material</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Map</displayed-value>
+                <stored-value>map</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Sound</displayed-value>
+                <stored-value>sound</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Musical Composition</displayed-value>
+                <stored-value>musical composition</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Text</displayed-value>
+                <stored-value>text</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Annotation</displayed-value>
+                <stored-value>annotation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Bibliography</displayed-value>
+                <stored-value>bibliography</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Book</displayed-value>
+                <stored-value>book</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Book Part</displayed-value>
+                <stored-value>book part</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Conference Object</displayed-value>
+                <stored-value>conference object</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Conference Proceedings</displayed-value>
+                <stored-value>conference proceedings</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>--- Conference Paper</displayed-value>
+                <stored-value>conference paper</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>--- Conference Poster</displayed-value>
+                <stored-value>conference poster</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Conference Paper Not In Proceedings</displayed-value>
+                <stored-value>conference paper not in proceedings</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Conference Poster Not In Proceedings</displayed-value>
+                <stored-value>conference poster not in proceedings</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Lecture</displayed-value>
+                <stored-value>lecture</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Letter</displayed-value>
+                <stored-value>letter</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Periodical</displayed-value>
+                <stored-value>periodical</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Journal</displayed-value>
+                <stored-value>journal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>--- Contribution to Journal</displayed-value>
+                <stored-value>contribution to journal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>---- Journal Article</displayed-value>
+                <stored-value>journal article</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>----- Data Paper</displayed-value>
+                <stored-value>data paper</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>----- Review Article</displayed-value>
+                <stored-value>review article</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>----- Research Article</displayed-value>
+                <stored-value>research article</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>----- Corrigendum</displayed-value>
+                <stored-value>corrigendum</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>----- Software Paper</displayed-value>
+                <stored-value>software paper</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>---- Editorial</displayed-value>
+                <stored-value>editorial</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>---- Letter to the Editor</displayed-value>
+                <stored-value>letter to the editor</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Newspaper</displayed-value>
+                <stored-value>newspaper</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>--- Newspaper Article</displayed-value>
+                <stored-value>newspaper article</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Magazine</displayed-value>
+                <stored-value>magazine</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Patent</displayed-value>
+                <stored-value>patent</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Preprint</displayed-value>
+                <stored-value>preprint</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Report</displayed-value>
+                <stored-value>report</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Report Part</displayed-value>
+                <stored-value>report part</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Internal Report</displayed-value>
+                <stored-value>internal report</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Memorandum</displayed-value>
+                <stored-value>memorandum</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Other Type of Report</displayed-value>
+                <stored-value>other type of report</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Policy Report</displayed-value>
+                <stored-value>policy report</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Project Deliverable</displayed-value>
+                <stored-value>project deliverable</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>--- Data Management Plan</displayed-value>
+                <stored-value>data management plan</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Report to Funding Agency</displayed-value>
+                <stored-value>report to funding agency</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Research Report</displayed-value>
+                <stored-value>research report</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Technical Report</displayed-value>
+                <stored-value>technical report</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Research Proposal</displayed-value>
+                <stored-value>research proposal</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Review</displayed-value>
+                <stored-value>review</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Book Review</displayed-value>
+                <stored-value>book review</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Technical Documentation</displayed-value>
+                <stored-value>technical documentation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Working Paper</displayed-value>
+                <stored-value>working paper</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Thesis</displayed-value>
+                <stored-value>thesis</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Bachelor Thesis</displayed-value>
+                <stored-value>bachelor thesis</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Doctoral Thesis</displayed-value>
+                <stored-value>doctoral thesis</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>-- Master Thesis</displayed-value>
+                <stored-value>master thesis</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Musical Notation</displayed-value>
+                <stored-value>musical notation</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Blog Post</displayed-value>
+                <stored-value>blog post</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>- Manuscript</displayed-value>
+                <stored-value>website</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Learning Object</displayed-value>
+                <stored-value>learning object</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Clinical Trial</displayed-value>
+                <stored-value>clinical trial</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Clinical Study</displayed-value>
+                <stored-value>clinical study</stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="openaire_version_types" dc-term="version">
+            <pair>
+                <displayed-value>Author’s Original</displayed-value>
+                <stored-value>http://purl.org/coar/version/c_b1a7d7d4d402bcce</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Submitted Manuscript Under Review</displayed-value>
+                <stored-value>http://purl.org/coar/version/c_71e4c1898caa6e32</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Accepted Manuscript</displayed-value>
+                <stored-value>http://purl.org/coar/version/c_ab4af688f83e57aa</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Proof</displayed-value>
+                <stored-value>http://purl.org/coar/version/c_fa2ee174bc00049f</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Version of Record</displayed-value>
+                <stored-value>http://purl.org/coar/version/c_970fb48d4fbd8a85</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Corrected Version of Record</displayed-value>
+                <stored-value>http://purl.org/coar/version/c_e19f295774971610</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Enhanced Version of Record</displayed-value>
+                <stored-value>http://purl.org/coar/version/c_dc82b40f9837b551</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Not Applicable (or Unknown)</displayed-value>
+                <stored-value>http://purl.org/coar/version/c_be7fb7dd8ff6fe43</stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="openaire_rights" dc-term="rights">
+            <pair>
+                <displayed-value>open access</displayed-value>
+                <stored-value>http://purl.org/coar/access_right/c_abf2</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>embargoed access</displayed-value>
+                <stored-value>http://purl.org/coar/access_right/c_f1cf</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>restricted access</displayed-value>
+                <stored-value>http://purl.org/coar/access_right/c_16ec</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>metadata only access</displayed-value>
+                <stored-value>http://purl.org/coar/access_right/c_14cb</stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="openaire_author_identifier_types" dc-term="identifier">
+            <pair>
+                <displayed-value>Scopus Author ID</displayed-value>
+                <stored-value>scopus-author-id</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ciencia ID</displayed-value>
+                <stored-value>ciencia-id</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Google Scholar ID</displayed-value>
+                <stored-value>gsid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Open Researcher and Contributor ID (ORCID)</displayed-value>
+                <stored-value>orcid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Web of Science ResearcherID</displayed-value>
+                <stored-value>rid</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>ISNI - International Standard Name Identifier</displayed-value>
+                <stored-value>isni</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="openaire_organization_identifier_types" dc-term="identifier">
+            <pair>
+                <displayed-value>ISNI - International Standard Name Identifier</displayed-value>
+                <stored-value>isni</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Ringgold identifier</displayed-value>
+                <stored-value>rin</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Research Organization Registry</displayed-value>
+                <stored-value>ror</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Other</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+        </value-pairs>
+
+        <value-pairs value-pairs-name="openaire_organization_types" dc-term="type">
+            <pair>
+                <displayed-value>N/A</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Is a Funding Organization</displayed-value>
+                <stored-value>FundingOrganization</stored-value>
+            </pair>
+        </value-pairs>
+
+        <!-- Thesis types for thesisForm -->
+        <value-pairs value-pairs-name="thesis_types" dc-term="type">
+            <pair>
+                <displayed-value>Praca licencjacka</displayed-value>
+                <stored-value>Bachelor thesis</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Praca inżynierska</displayed-value>
+                <stored-value>Engineer thesis</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Praca magisterska</displayed-value>
+                <stored-value>Master thesis</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Praca doktorska</displayed-value>
+                <stored-value>Doctoral thesis</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Praca habilitacyjna</displayed-value>
+                <stored-value>Habilitation thesis</stored-value>
+            </pair>
+        </value-pairs>
+
+    </form-value-pairs>

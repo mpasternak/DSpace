@@ -1,0 +1,26 @@
+        <!-- Form used for entering in Bitstream/File metadata after uploading a file -->
+        <form name="bitstream-metadata">
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>false</repeatable>
+                    <label>Tytuł</label>
+                    <input-type>onebox</input-type>
+                    <hint>Podaj nazwę pliku.</hint>
+                    <required>You must enter a name for this file</required>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <repeatable>true</repeatable>
+                    <label>Opis</label>
+                    <input-type>textarea</input-type>
+                    <hint>Podaj opis pliku</hint>
+                    <required></required>
+                </field>
+            </row>
+        </form>

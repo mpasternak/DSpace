@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE input-forms SYSTEM "submission-forms.dtd" [
+    <!ENTITY form-bitstream-metadata SYSTEM "submission-forms-parts/form-bitstream-metadata.xml">
+    <!ENTITY form-traditional SYSTEM "submission-forms-parts/form-traditional.xml">
+    <!ENTITY form-entities SYSTEM "submission-forms-parts/form-entities.xml">
+    <!ENTITY form-openaire SYSTEM "submission-forms-parts/form-openaire.xml">
+    <!ENTITY value-pairs SYSTEM "submission-forms-parts/value-pairs.xml">
+]>
+
+
+<input-forms>
+
+    <!-- The form-definitions map lays out the detailed definition of all the -->
+    <!-- submission forms. Each separate form set has a unique name as an     -->
+    <!-- attribute. This name matches one of the names in the form-map. One   -->
+    <!-- named form set has the name "traditional"; as this name suggests,    -->
+    <!-- it is the old style and is also the default, which gets used when    -->
+    <!-- the specified collection has no correspondingly-named form set.      -->
+    <!--                                                                      -->
+    <!-- Each form set contains an ordered set of pages; each page defines    -->
+    <!-- one submission metadata entry screen. Each page has an ordered list  -->
+    <!-- of field definitions, Each field definition corresponds to one       -->
+    <!-- metadata entry (a so-called row), which has a DC element name, a     -->
+    <!-- displayed label, a text string prompt which is called a hint, and    -->
+    <!-- an input-type. Each field also may hold optional elements: DC        -->
+    <!-- qualifier name, a repeatable flag, and a text string whose presence  -->
+    <!-- serves as a 'this field is required' flag.                           -->
+
+    <form-definitions>
+        <!-- Bitstream/File metadata form -->
+        &form-bitstream-metadata;
+
+        <!-- Traditional (default) forms: traditionalpageone, traditionalpagetwo -->
+        &form-traditional;
+
+        <!-- Other entity forms: personStep, projectStep, orgUnitStep, journalStep, journalVolumeStep, journalIssueStep -->
+        &form-entities;
+
+        <!-- OpenAIRE forms: openairePublicationPageoneForm, openairePublicationPagetwoForm, openairePersonForm, openaireProjectForm, openaireOrganizationForm -->
+        &form-openaire;
+    </form-definitions>
+
+    <!-- Value pairs for dropdowns and qualdrop fields -->
+    &value-pairs;
+
+</input-forms>

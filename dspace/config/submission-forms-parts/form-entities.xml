@@ -1,0 +1,431 @@
+        <form name="personStep">
+            <row>
+                <relation-field>
+                    <relationship-type>isPublicationOfAuthor</relationship-type>
+                    <search-configuration>publication</search-configuration>
+                    <label>Publikacja</label>
+                    <hint>importuj publikację</hint>
+                    <externalsources>pubmed</externalsources>
+                </relation-field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>person</dc-schema>
+                    <dc-element>familyName</dc-element>
+                    <label>Nazwisko</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz nazwisko osoby</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>person</dc-schema>
+                    <dc-element>givenName</dc-element>
+                    <label>Imię</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz imię osoby</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>person</dc-schema>
+                    <dc-element>email</dc-element>
+                    <label>Email</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz email osoby</hint>
+                </field>
+            </row>
+            <!--     <row>-->
+            <!--     <field>-->
+            <!--       <dc-schema>person</dc-schema>-->
+            <!--       <dc-element>identifier</dc-element>-->
+            <!--       <dc-qualifier>orcid</dc-qualifier>-->
+            <!--       <label>Orcid</label>-->
+            <!--       <input-type>onebox</input-type>-->
+            <!--       <hint>Enter the orcid of the person</hint>-->
+            <!--     </field>-->
+            <!--     </row>-->
+            <row>
+                <field>
+                    <dc-schema>person</dc-schema>
+                    <dc-element>birthDate</dc-element>
+                    <label>Data urodzenia</label>
+                    <input-type>date</input-type>
+                    <hint>Wpisz datę urodzenia osoby</hint>
+                </field>
+            </row>
+<!--            <row>-->
+<!--                <field>-->
+<!--                    <dc-schema>person</dc-schema>-->
+<!--                    <dc-element>identifier</dc-element>-->
+<!--                    <dc-qualifier>staffid</dc-qualifier>-->
+<!--                    <label>Staff ID</label>-->
+<!--                    <input-type>onebox</input-type>-->
+<!--                    <hint>Enter the staff id of the person</hint>-->
+<!--                </field>-->
+<!--            </row>-->
+            <row>
+                <field>
+                    <dc-schema>person</dc-schema>
+                    <dc-element>jobTitle</dc-element>
+                    <label>Stanowisko</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz stanowisko osoby</hint>
+                </field>
+            </row>
+        </form>
+
+        <!-- Form which defines the metadata page/section for depositing Project Entities -->
+        <form name="projectStep">
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <label>Nazwa</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz nazwę projektu</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <label>ID</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz numer ID projektu</hint>
+                </field>
+            </row>
+<!--            <row>-->
+<!--                <field>-->
+<!--                    <dc-schema>project</dc-schema>-->
+<!--                    <dc-element>identifier</dc-element>-->
+<!--                    <dc-qualifier>status</dc-qualifier>-->
+<!--                    <label>Status</label>-->
+<!--                    <input-type value-pairs-name="project_status">dropdown</input-type>-->
+<!--                    <hint>Enter the status of the project</hint>-->
+<!--                </field>-->
+<!--            </row>-->
+<!--            <row>-->
+<!--                <field>-->
+<!--                    <dc-schema>project</dc-schema>-->
+<!--                    <dc-element>identifier</dc-element>-->
+<!--                    <dc-qualifier>startdate</dc-qualifier>-->
+<!--                    <label>Start date</label>-->
+<!--                    <input-type>date</input-type>-->
+<!--                    <hint>Enter the start date of the project</hint>-->
+<!--                </field>-->
+<!--            </row>-->
+<!--            <row>-->
+<!--                <field>-->
+<!--                    <dc-schema>project</dc-schema>-->
+<!--                    <dc-element>identifier</dc-element>-->
+<!--                    <dc-qualifier>expectedcompletion</dc-qualifier>-->
+<!--                    <label>Expected Completion</label>-->
+<!--                    <input-type>date</input-type>-->
+<!--                    <hint>Enter the expected completion date of the project</hint>-->
+<!--                </field>-->
+<!--            </row>-->
+            <row>
+                <relation-field>
+                    <relationship-type>isPersonOfProject</relationship-type>
+                    <search-configuration>person</search-configuration>
+                    <repeatable>true</repeatable>
+                    <label>Badacz</label>
+                    <hint>Wpisz imię i nazwisko badacza (Nazwisko, Imiona).</hint>
+                    <linked-metadata-field>
+                        <dc-schema>project</dc-schema>
+                        <dc-element>investigator</dc-element>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
+                    <externalsources>orcid</externalsources>
+                </relation-field>
+            </row>
+            <row>
+                <relation-field>
+                    <relationship-type>isOrgUnitOfProject</relationship-type>
+                    <search-configuration>orgunit</search-configuration>
+                    <repeatable>false</repeatable>
+                    <label>Organizacja</label>
+                    <hint>Wpisz nazwę organizacji</hint>
+                    <linked-metadata-field>
+                        <dc-schema>dc</dc-schema>
+                        <dc-element>contributor</dc-element>
+                        <dc-qualifier>other</dc-qualifier>
+                        <input-type>onebox</input-type>
+                    </linked-metadata-field>
+                    <externalsources>ror</externalsources>
+                </relation-field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>subject</dc-element>
+                    <repeatable>true</repeatable>
+                    <label>Słowa kluczowe</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz słowa kluczowe projektu</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>project</dc-schema>
+                    <dc-element>startDate</dc-element>
+                    <label>Data rozpoczęcia</label>
+                    <input-type>date</input-type>
+                    <hint>Wpisz datę rozpoczęcia projektu</hint>
+                </field>
+                <field>
+                    <dc-schema>project</dc-schema>
+                    <dc-element>endDate</dc-element>
+                    <label>Data zakończenia</label>
+                    <input-type>date</input-type>
+                    <hint>Wpisz datę zakończenia projektu</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>project</dc-schema>
+                    <dc-element>amount</dc-element>
+                    <label>Kwota</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz kwotę projektu</hint>
+                </field>
+                <field>
+                    <dc-schema>project</dc-schema>
+                    <dc-element>amount</dc-element>
+                    <dc-qualifier>currency</dc-qualifier>
+                    <label>Waluta</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz walutę projektu</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <label>Opis</label>
+                    <input-type>textarea</input-type>
+                    <hint>Wpisz opis projektu</hint>
+                </field>
+            </row>
+        </form>
+
+        <!-- Form which defines the metadata page/section for depositing OrgUnit Entities -->
+        <form name="orgUnitStep">
+            <row>
+                <field>
+                    <dc-schema>organization</dc-schema>
+                    <dc-element>legalName</dc-element>
+                    <label>Nazwa</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz nazwę jednostki organizacyjnej</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>identifier</dc-element>
+                    <label>Identyfikator</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz identyfikator jednostki</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>organization</dc-schema>
+                    <dc-element>foundingDate</dc-element>
+                    <label>Data założenia</label>
+                    <input-type>date</input-type>
+                    <hint>Wpisz datę założenia jednostki</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>organization</dc-schema>
+                    <dc-element>address</dc-element>
+                    <dc-qualifier>addressLocality</dc-qualifier>
+                    <label>Miasto</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz miasto jednostki</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>organization</dc-schema>
+                    <dc-element>address</dc-element>
+                    <dc-qualifier>addressCountry</dc-qualifier>
+                    <label>Kraj</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz kraj jednostki</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <label>Opis</label>
+                    <input-type>textarea</input-type>
+                    <hint>Wpisz opis jednostki organizacyjnej</hint>
+                </field>
+            </row>
+        </form>
+
+        <!-- Form which defines the metadata page/section for depositing Journal Entities -->
+        <form name="journalStep">
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <label>Nazwa</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz nazwę czasopisma</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>creativework</dc-schema>
+                    <dc-element>editor</dc-element>
+                    <label>Redaktor</label>
+                    <input-type>name</input-type>
+                    <hint>Wpisz redaktora czasopisma</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>creativeworkseries</dc-schema>
+                    <dc-element>issn</dc-element>
+                    <label>ISSN</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz numer ISSN czasopisma</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <label>Opis</label>
+                    <input-type>textarea</input-type>
+                    <hint>Wpisz opis czasopisma</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>creativework</dc-schema>
+                    <dc-element>publisher</dc-element>
+                    <label>Wydawca</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz wydawcę czasopisma</hint>
+                </field>
+            </row>
+
+        </form>
+
+        <!-- Form which defines the metadata page/section for depositing JournalVolume Entities -->
+        <form name="journalVolumeStep">
+            <row>
+                <relation-field>
+                    <relationship-type>isJournalOfVolume</relationship-type>
+                    <search-configuration>journal</search-configuration>
+                    <!-- example of filtering Discovery search for Journal by a specific publisher -->
+                    <!--<filter>creativework.publisher:somepublishername</filter>-->
+                    <label>Czasopismo</label>
+                    <hint>Wybierz czasopismo powiązane z tym tomem.</hint>
+                    <externalsources>sherpaJournal</externalsources>
+                </relation-field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <label>Nazwa</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz nazwę tomu czasopisma</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>publicationvolume</dc-schema>
+                    <dc-element>volumeNumber</dc-element>
+                    <label>Tom</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz numer tomu</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>creativework</dc-schema>
+                    <dc-element>datePublished</dc-element>
+                    <label>Data wydania</label>
+                    <input-type>date</input-type>
+                    <hint>Wpisz datę wydania tomu</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <label>Opis</label>
+                    <input-type>textarea</input-type>
+                    <hint>Wpisz opis tomu czasopisma</hint>
+                </field>
+            </row>
+        </form>
+
+        <!-- Form which defines the metadata page/section for depositing JournalIssue Entities -->
+        <form name="journalIssueStep">
+            <row>
+                <relation-field>
+                    <relationship-type>isJournalVolumeOfIssue</relationship-type>
+                    <search-configuration>journalvolume</search-configuration>
+                    <label>Tom czasopisma</label>
+                    <hint>Wybierz tom czasopisma powiązany z tym numerem.</hint>
+                </relation-field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>title</dc-element>
+                    <label>Nazwa</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz nazwę numeru czasopisma</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>publicationissue</dc-schema>
+                    <dc-element>issueNumber</dc-element>
+                    <label>Numer</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz numer wydania</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>creativework</dc-schema>
+                    <dc-element>datePublished</dc-element>
+                    <label>Data wydania</label>
+                    <input-type>date</input-type>
+                    <hint>Wpisz datę wydania numeru</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>description</dc-element>
+                    <label>Opis</label>
+                    <input-type>textarea</input-type>
+                    <hint>Wpisz opis numeru czasopisma</hint>
+                </field>
+            </row>
+            <row>
+                <field>
+                    <dc-schema>creativework</dc-schema>
+                    <dc-element>keywords</dc-element>
+                    <repeatable>true</repeatable>
+                    <label>Słowa kluczowe</label>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz słowa kluczowe numeru</hint>
+                </field>
+            </row>
+
+        </form>
