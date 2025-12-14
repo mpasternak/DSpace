@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: generate-dspace-xml
+        name: Generate DSpace XML from XInclude masters
+        entry: python scripts/generate-xinclude-xml.py
+        language: python
+        files: ^dspace/config/(submission-forms\.master\.xml|submission-forms-parts/.*\.xml|item-submission\.master\.xml|item-submission-parts/.*\.xml)$
+        pass_filenames: false
