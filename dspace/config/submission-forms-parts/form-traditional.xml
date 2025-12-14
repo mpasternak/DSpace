@@ -283,18 +283,18 @@
             <!-- SŁOWA KLUCZOWE / KEYWORDS -->
             <!-- ================================================================= -->
             <!-- Główne słowa kluczowe (język z dc.language.iso) -->
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>subject</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>Słowa kluczowe</label>
-                    <input-type>tag</input-type>
-                    <hint>Wpisz słowa kluczowe w głównym języku publikacji.</hint>
-                    <required></required>
-                </field>
-            </row>
+<!--            <row>-->
+<!--                <field>-->
+<!--                    <dc-schema>dc</dc-schema>-->
+<!--                    <dc-element>subject</dc-element>-->
+<!--                    <dc-qualifier></dc-qualifier>-->
+<!--                    <repeatable>true</repeatable>-->
+<!--                    <label>Słowa kluczowe</label>-->
+<!--                    <input-type>tag</input-type>-->
+<!--                    <hint>Wpisz słowa kluczowe w głównym języku publikacji.</hint>-->
+<!--                    <required></required>-->
+<!--                </field>-->
+<!--            </row>-->
             <!-- Słowa kluczowe - tłumaczenie (opcjonalne, z wyborem języka) -->
             <row>
                 <field>
@@ -316,19 +316,19 @@
             <!-- ================================================================= -->
             <!-- STRESZCZENIE / ABSTRACT -->
             <!-- ================================================================= -->
-            <!-- Główne streszczenie (język z dc.language.iso) -->
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>description</dc-element>
-                    <dc-qualifier>abstract</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Streszczenie</label>
-                    <input-type>textarea</input-type>
-                    <hint>Wpisz streszczenie w głównym języku publikacji.</hint>
-                    <required></required>
-                </field>
-            </row>
+<!--            &lt;!&ndash; Główne streszczenie (język z dc.language.iso) &ndash;&gt;-->
+<!--            <row>-->
+<!--                <field>-->
+<!--                    <dc-schema>dc</dc-schema>-->
+<!--                    <dc-element>description</dc-element>-->
+<!--                    <dc-qualifier>abstract</dc-qualifier>-->
+<!--                    <repeatable>false</repeatable>-->
+<!--                    <label>Streszczenie</label>-->
+<!--                    <input-type>textarea</input-type>-->
+<!--                    <hint>Wpisz streszczenie w głównym języku publikacji.</hint>-->
+<!--                    <required></required>-->
+<!--                </field>-->
+<!--            </row>-->
             <!-- Streszczenie - tłumaczenie (opcjonalne, z wyborem języka) -->
             <row>
                 <field>
@@ -367,18 +367,18 @@
             <!-- OPIS / DESCRIPTION -->
             <!-- ================================================================= -->
             <!-- Główny opis (język z dc.language.iso) -->
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>description</dc-element>
-                    <dc-qualifier></dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>Opis</label>
-                    <input-type>textarea</input-type>
-                    <hint>Wpisz opis pozycji w głównym języku publikacji.</hint>
-                    <required></required>
-                </field>
-            </row>
+<!--            <row>-->
+<!--                <field>-->
+<!--                    <dc-schema>dc</dc-schema>-->
+<!--                    <dc-element>description</dc-element>-->
+<!--                    <dc-qualifier></dc-qualifier>-->
+<!--                    <repeatable>false</repeatable>-->
+<!--                    <label>Opis</label>-->
+<!--                    <input-type>textarea</input-type>-->
+<!--                    <hint>Wpisz opis pozycji w głównym języku publikacji.</hint>-->
+<!--                    <required></required>-->
+<!--                </field>-->
+<!--            </row>-->
             <!-- Opis - tłumaczenie (opcjonalne, z wyborem języka) -->
             <row>
                 <field>
