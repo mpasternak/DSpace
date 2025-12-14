@@ -1,4 +1,19 @@
     <form-value-pairs>
+        <value-pairs value-pairs-name="title_languages" dc-term="language">
+            <pair>
+                <displayed-value>Polski</displayed-value>
+                <stored-value>pl</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>English</displayed-value>
+                <stored-value>en</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Inny / Other</displayed-value>
+                <stored-value></stored-value>
+            </pair>
+        </value-pairs>
+
         <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
             <pair>
                 <displayed-value>ISSN</displayed-value>
