@@ -29,11 +29,11 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>title</dc-element>
-                    <dc-qualifier>alternative</dc-qualifier>
+                    <dc-qualifier></dc-qualifier>
                     <repeatable>true</repeatable>
                     <label>Tytuł alternatywny / Alternative title</label>
-                    <input-type value-pairs-name="title_languages">qualdrop_value</input-type>
-                    <hint>Wybierz język i wpisz alternatywny tytuł.</hint>
+                    <input-type value-pairs-name="title_language_qualifiers">qualdrop_value</input-type>
+                    <hint>Wybierz język i wpisz alternatywny tytuł. Zapisywane jako dc.title.alternative-pl lub dc.title.alternative-en.</hint>
                     <required></required>
                 </field>
             </row>
@@ -278,63 +278,71 @@
         <!-- Form which defines the second page/section of the "traditional" DSpace submission process,
              often used when depositing normal Items. -->
         <form name="traditionalpagetwo">
-            <!-- Słowa kluczowe PL -->
+            <!-- ================================================================= -->
+            <!-- SŁOWA KLUCZOWE / KEYWORDS -->
+            <!-- ================================================================= -->
+            <!-- Główne słowa kluczowe (język z dc.language.iso) -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>subject</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <language>pl</language>
                     <repeatable>true</repeatable>
-                    <label>Słowa kluczowe (PL)</label>
+                    <label>Słowa kluczowe / Keywords</label>
                     <input-type>tag</input-type>
-                    <hint>Wpisz słowa kluczowe w języku polskim.</hint>
+                    <hint>Wpisz słowa kluczowe w głównym języku publikacji.</hint>
                     <required></required>
                 </field>
             </row>
-            <!-- Słowa kluczowe EN -->
+            <!-- Słowa kluczowe - tłumaczenie (opcjonalne, z wyborem języka) -->
+            <!-- Zapisywane jako dc.subject.pl lub dc.subject.en -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>subject</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <language>en</language>
                     <repeatable>true</repeatable>
-                    <label>Keywords (EN)</label>
-                    <input-type>tag</input-type>
-                    <hint>Enter keywords in English.</hint>
+                    <label>Słowa kluczowe (tłumaczenie)</label>
+                    <input-type value-pairs-name="language_qualifiers">qualdrop_value</input-type>
+                    <hint>Opcjonalnie: wybierz język i wpisz słowa kluczowe w innym języku (oddzielone przecinkami).</hint>
                     <required></required>
                 </field>
             </row>
-            <!-- Streszczenie PL -->
+
+            <!-- ================================================================= -->
+            <!-- STRESZCZENIE / ABSTRACT -->
+            <!-- ================================================================= -->
+            <!-- Główne streszczenie (język z dc.language.iso) -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier>abstract</dc-qualifier>
-                    <language>pl</language>
                     <repeatable>false</repeatable>
-                    <label>Streszczenie (PL)</label>
+                    <label>Streszczenie / Abstract</label>
                     <input-type>textarea</input-type>
-                    <hint>Wpisz streszczenie w języku polskim.</hint>
+                    <hint>Wpisz streszczenie w głównym języku publikacji.</hint>
                     <required></required>
                 </field>
             </row>
-            <!-- Streszczenie EN -->
+            <!-- Streszczenie - tłumaczenie (opcjonalne, z wyborem języka) -->
+            <!-- Zapisywane jako dc.description.abstract-pl lub dc.description.abstract-en -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
-                    <dc-qualifier>abstract</dc-qualifier>
-                    <language>en</language>
-                    <repeatable>false</repeatable>
-                    <label>Abstract (EN)</label>
-                    <input-type>textarea</input-type>
-                    <hint>Enter abstract in English.</hint>
+                    <dc-qualifier></dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Streszczenie (tłumaczenie)</label>
+                    <input-type value-pairs-name="abstract_language_qualifiers">qualdrop_value</input-type>
+                    <hint>Opcjonalnie: wybierz język i wpisz streszczenie w innym języku.</hint>
                     <required></required>
                 </field>
             </row>
-            <!-- Źródło finansowania -->
+
+            <!-- ================================================================= -->
+            <!-- ŹRÓDŁO FINANSOWANIA -->
+            <!-- ================================================================= -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
@@ -347,31 +355,34 @@
                     <required></required>
                 </field>
             </row>
-            <!-- Opis PL -->
+
+            <!-- ================================================================= -->
+            <!-- OPIS / DESCRIPTION -->
+            <!-- ================================================================= -->
+            <!-- Główny opis (język z dc.language.iso) -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <language>pl</language>
                     <repeatable>false</repeatable>
-                    <label>Opis (PL)</label>
+                    <label>Opis / Description</label>
                     <input-type>textarea</input-type>
-                    <hint>Wpisz opis pozycji w języku polskim.</hint>
+                    <hint>Wpisz opis pozycji w głównym języku publikacji.</hint>
                     <required></required>
                 </field>
             </row>
-            <!-- Opis EN -->
+            <!-- Opis - tłumaczenie (opcjonalne, z wyborem języka) -->
+            <!-- Zapisywane jako dc.description.pl lub dc.description.en -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier></dc-qualifier>
-                    <language>en</language>
-                    <repeatable>false</repeatable>
-                    <label>Description (EN)</label>
-                    <input-type>textarea</input-type>
-                    <hint>Enter description in English.</hint>
+                    <repeatable>true</repeatable>
+                    <label>Opis (tłumaczenie)</label>
+                    <input-type value-pairs-name="language_qualifiers">qualdrop_value</input-type>
+                    <hint>Opcjonalnie: wybierz język i wpisz opis w innym języku.</hint>
                     <required></required>
                 </field>
             </row>
