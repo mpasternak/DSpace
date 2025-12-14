@@ -86,11 +86,12 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>title</dc-element>
-                    <dc-qualifier/>
+                    <dc-qualifier>alternative</dc-qualifier>
+                    <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
                     <label>Tytuł alternatywny / Alternative title</label>
-                    <input-type value-pairs-name="title_language_qualifiers">qualdrop_value</input-type>
-                    <hint>Wybierz język i wpisz alternatywny tytuł. Zapisywane jako dc.title.alternative-pl lub dc.title.alternative-en.</hint>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz alternatywny tytuł i wybierz jego język.</hint>
                     <required/>
                 </field>
             </row>
@@ -352,16 +353,16 @@
                 </field>
             </row>
             <!-- Słowa kluczowe - tłumaczenie (opcjonalne, z wyborem języka) -->
-            <!-- Zapisywane jako dc.subject.pl lub dc.subject.en -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>subject</dc-element>
                     <dc-qualifier/>
+                    <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
                     <label>Słowa kluczowe (tłumaczenie)</label>
-                    <input-type value-pairs-name="language_qualifiers">qualdrop_value</input-type>
-                    <hint>Opcjonalnie: wybierz język i wpisz słowa kluczowe w innym języku (oddzielone przecinkami).</hint>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz słowa kluczowe i wybierz język (oddzielone przecinkami).</hint>
                     <required/>
                 </field>
             </row>
@@ -383,16 +384,16 @@
                 </field>
             </row>
             <!-- Streszczenie - tłumaczenie (opcjonalne, z wyborem języka) -->
-            <!-- Zapisywane jako dc.description.abstract-pl lub dc.description.abstract-en -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
-                    <dc-qualifier/>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
                     <label>Streszczenie (tłumaczenie)</label>
-                    <input-type value-pairs-name="abstract_language_qualifiers">qualdrop_value</input-type>
-                    <hint>Opcjonalnie: wybierz język i wpisz streszczenie w innym języku.</hint>
+                    <input-type>textarea</input-type>
+                    <hint>Wpisz streszczenie i wybierz język.</hint>
                     <required/>
                 </field>
             </row>
@@ -430,16 +431,16 @@
                 </field>
             </row>
             <!-- Opis - tłumaczenie (opcjonalne, z wyborem języka) -->
-            <!-- Zapisywane jako dc.description.pl lub dc.description.en -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier/>
+                    <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
                     <label>Opis (tłumaczenie)</label>
-                    <input-type value-pairs-name="language_qualifiers">qualdrop_value</input-type>
-                    <hint>Opcjonalnie: wybierz język i wpisz opis w innym języku.</hint>
+                    <input-type>textarea</input-type>
+                    <hint>Wpisz opis i wybierz język.</hint>
                     <required/>
                 </field>
             </row>
@@ -1389,45 +1390,6 @@
 
     <!-- Value pairs for dropdowns and qualdrop fields -->
         <form-value-pairs>
-        <!-- Language qualifiers for keywords (dc.subject) and description (dc.description) -->
-        <!-- Creates: dc.subject.pl, dc.subject.en, dc.description.pl, dc.description.en -->
-        <value-pairs value-pairs-name="language_qualifiers" dc-term="qualifier">
-            <pair>
-                <displayed-value>Polski</displayed-value>
-                <stored-value>pl</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>English</displayed-value>
-                <stored-value>en</stored-value>
-            </pair>
-        </value-pairs>
-
-        <!-- Language qualifiers for abstract (dc.description.abstract) -->
-        <!-- Creates: dc.description.abstract-pl, dc.description.abstract-en -->
-        <value-pairs value-pairs-name="abstract_language_qualifiers" dc-term="qualifier">
-            <pair>
-                <displayed-value>Polski</displayed-value>
-                <stored-value>abstract-pl</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>English</displayed-value>
-                <stored-value>abstract-en</stored-value>
-            </pair>
-        </value-pairs>
-
-        <!-- Language qualifiers for alternative title (dc.title.alternative) -->
-        <!-- Creates: dc.title.alternative-pl, dc.title.alternative-en -->
-        <value-pairs value-pairs-name="title_language_qualifiers" dc-term="qualifier">
-            <pair>
-                <displayed-value>Polski</displayed-value>
-                <stored-value>alternative-pl</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>English</displayed-value>
-                <stored-value>alternative-en</stored-value>
-            </pair>
-        </value-pairs>
-
         <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
             <pair>
                 <displayed-value>ISSN</displayed-value>

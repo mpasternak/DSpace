@@ -1,43 +1,4 @@
     <form-value-pairs>
-        <!-- Language qualifiers for keywords (dc.subject) and description (dc.description) -->
-        <!-- Creates: dc.subject.pl, dc.subject.en, dc.description.pl, dc.description.en -->
-        <value-pairs value-pairs-name="language_qualifiers" dc-term="qualifier">
-            <pair>
-                <displayed-value>Polski</displayed-value>
-                <stored-value>pl</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>English</displayed-value>
-                <stored-value>en</stored-value>
-            </pair>
-        </value-pairs>
-
-        <!-- Language qualifiers for abstract (dc.description.abstract) -->
-        <!-- Creates: dc.description.abstract-pl, dc.description.abstract-en -->
-        <value-pairs value-pairs-name="abstract_language_qualifiers" dc-term="qualifier">
-            <pair>
-                <displayed-value>Polski</displayed-value>
-                <stored-value>abstract-pl</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>English</displayed-value>
-                <stored-value>abstract-en</stored-value>
-            </pair>
-        </value-pairs>
-
-        <!-- Language qualifiers for alternative title (dc.title.alternative) -->
-        <!-- Creates: dc.title.alternative-pl, dc.title.alternative-en -->
-        <value-pairs value-pairs-name="title_language_qualifiers" dc-term="qualifier">
-            <pair>
-                <displayed-value>Polski</displayed-value>
-                <stored-value>alternative-pl</stored-value>
-            </pair>
-            <pair>
-                <displayed-value>English</displayed-value>
-                <stored-value>alternative-en</stored-value>
-            </pair>
-        </value-pairs>
-
         <value-pairs value-pairs-name="common_identifiers" dc-term="identifier">
             <pair>
                 <displayed-value>ISSN</displayed-value>

@@ -29,11 +29,12 @@
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>title</dc-element>
-                    <dc-qualifier></dc-qualifier>
+                    <dc-qualifier>alternative</dc-qualifier>
+                    <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
                     <label>Tytuł alternatywny / Alternative title</label>
-                    <input-type value-pairs-name="title_language_qualifiers">qualdrop_value</input-type>
-                    <hint>Wybierz język i wpisz alternatywny tytuł. Zapisywane jako dc.title.alternative-pl lub dc.title.alternative-en.</hint>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz alternatywny tytuł i wybierz jego język.</hint>
                     <required></required>
                 </field>
             </row>
@@ -295,16 +296,16 @@
                 </field>
             </row>
             <!-- Słowa kluczowe - tłumaczenie (opcjonalne, z wyborem języka) -->
-            <!-- Zapisywane jako dc.subject.pl lub dc.subject.en -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>subject</dc-element>
                     <dc-qualifier></dc-qualifier>
+                    <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
                     <label>Słowa kluczowe (tłumaczenie)</label>
-                    <input-type value-pairs-name="language_qualifiers">qualdrop_value</input-type>
-                    <hint>Opcjonalnie: wybierz język i wpisz słowa kluczowe w innym języku (oddzielone przecinkami).</hint>
+                    <input-type>onebox</input-type>
+                    <hint>Wpisz słowa kluczowe i wybierz język (oddzielone przecinkami).</hint>
                     <required></required>
                 </field>
             </row>
@@ -326,16 +327,16 @@
                 </field>
             </row>
             <!-- Streszczenie - tłumaczenie (opcjonalne, z wyborem języka) -->
-            <!-- Zapisywane jako dc.description.abstract-pl lub dc.description.abstract-en -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
-                    <dc-qualifier></dc-qualifier>
+                    <dc-qualifier>abstract</dc-qualifier>
+                    <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
                     <label>Streszczenie (tłumaczenie)</label>
-                    <input-type value-pairs-name="abstract_language_qualifiers">qualdrop_value</input-type>
-                    <hint>Opcjonalnie: wybierz język i wpisz streszczenie w innym języku.</hint>
+                    <input-type>textarea</input-type>
+                    <hint>Wpisz streszczenie i wybierz język.</hint>
                     <required></required>
                 </field>
             </row>
@@ -373,16 +374,16 @@
                 </field>
             </row>
             <!-- Opis - tłumaczenie (opcjonalne, z wyborem języka) -->
-            <!-- Zapisywane jako dc.description.pl lub dc.description.en -->
             <row>
                 <field>
                     <dc-schema>dc</dc-schema>
                     <dc-element>description</dc-element>
                     <dc-qualifier></dc-qualifier>
+                    <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
                     <label>Opis (tłumaczenie)</label>
-                    <input-type value-pairs-name="language_qualifiers">qualdrop_value</input-type>
-                    <hint>Opcjonalnie: wybierz język i wpisz opis w innym języku.</hint>
+                    <input-type>textarea</input-type>
+                    <hint>Wpisz opis i wybierz język.</hint>
                     <required></required>
                 </field>
             </row>
