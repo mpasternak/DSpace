@@ -149,21 +149,6 @@
             <!-- TYPE-SPECIFIC FIELDS - pokazywane w zależności od wybranego typu -->
             <!-- ================================================================= -->
 
-            <!-- BOOK: ISBN -->
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier>isbn</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>ISBN</label>
-                    <type-bind>Book</type-bind>
-                    <input-type>onebox</input-type>
-                    <hint>Wpisz numer ISBN książki.</hint>
-                    <required></required>
-                </field>
-            </row>
-
             <!-- BOOK CHAPTER: Tytuł książki nadrzędnej -->
             <row>
                 <field>
@@ -189,20 +174,6 @@
                     <type-bind>Book chapter</type-bind>
                     <input-type>onebox</input-type>
                     <hint>Wpisz nazwisko i imię redaktora książki.</hint>
-                    <required></required>
-                </field>
-            </row>
-            <!-- BOOK CHAPTER: ISBN książki -->
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier>isbn</dc-qualifier>
-                    <repeatable>true</repeatable>
-                    <label>ISBN książki</label>
-                    <type-bind>Book chapter</type-bind>
-                    <input-type>onebox</input-type>
-                    <hint>Wpisz numer ISBN książki, w której znajduje się rozdział.</hint>
                     <required></required>
                 </field>
             </row>
@@ -269,20 +240,6 @@
                     <type-bind>Article</type-bind>
                     <input-type>onebox</input-type>
                     <hint>Ostatnia strona.</hint>
-                    <required></required>
-                </field>
-            </row>
-            <!-- ARTICLE: ISSN -->
-            <row>
-                <field>
-                    <dc-schema>dc</dc-schema>
-                    <dc-element>identifier</dc-element>
-                    <dc-qualifier>issn</dc-qualifier>
-                    <repeatable>false</repeatable>
-                    <label>ISSN</label>
-                    <type-bind>Article</type-bind>
-                    <input-type>onebox</input-type>
-                    <hint>Wpisz numer ISSN czasopisma.</hint>
                     <required></required>
                 </field>
             </row>
