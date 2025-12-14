@@ -126,12 +126,12 @@
                 <stored-value>pl</stored-value>
             </pair>
             <pair>
-                <displayed-value>Angielski (amerykański)</displayed-value>
-                <stored-value>en_US</stored-value>
-            </pair>
-            <pair>
                 <displayed-value>Angielski</displayed-value>
                 <stored-value>en</stored-value>
+            </pair>
+            <pair>
+                <displayed-value>Angielski (amerykański)</displayed-value>
+                <stored-value>en_US</stored-value>
             </pair>
             <pair>
                 <displayed-value>Ukraiński</displayed-value>

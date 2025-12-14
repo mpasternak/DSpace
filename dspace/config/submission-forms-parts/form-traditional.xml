@@ -303,7 +303,7 @@
                     <dc-qualifier></dc-qualifier>
                     <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
-                    <label>Słowa kluczowe (tłumaczenie)</label>
+                    <label>Słowa kluczowe</label>
                     <input-type>onebox</input-type>
                     <hint>Wpisz słowa kluczowe i wybierz język (oddzielone przecinkami).</hint>
                     <required></required>
@@ -337,7 +337,7 @@
                     <dc-qualifier>abstract</dc-qualifier>
                     <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
-                    <label>Streszczenie (tłumaczenie)</label>
+                    <label>Streszczenie</label>
                     <input-type>textarea</input-type>
                     <hint>Wpisz streszczenie i wybierz język.</hint>
                     <required></required>
@@ -387,7 +387,7 @@
                     <dc-qualifier></dc-qualifier>
                     <language value-pairs-name="common_iso_languages">true</language>
                     <repeatable>true</repeatable>
-                    <label>Opis (tłumaczenie)</label>
+                    <label>Opis</label>
                     <input-type>textarea</input-type>
                     <hint>Wpisz opis i wybierz język.</hint>
                     <required></required>
