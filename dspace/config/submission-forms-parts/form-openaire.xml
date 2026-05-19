@@ -334,6 +334,22 @@
                     <required></required>
                 </field>
             </row>
+            <!-- BIBLIOGRAFIA / REFERENCES (CrossRef reference deposit) -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>relation</dc-element>
+                    <dc-qualifier>references</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Bibliografia</label>
+                    <input-type>textarea</input-type>
+                    <hint>Wpisz jedną pozycję bibliograficzną w polu. Aby dodać kolejną, kliknij "+".
+                        Każda pozycja powinna zawierać pełną informację o cytowanej pracy
+                        (autorzy, tytuł, czasopismo/wydawca, rok, DOI jeśli znany).
+                    </hint>
+                    <required></required>
+                </field>
+            </row>
         </form>
 
         <form name="openairePersonForm">
