@@ -347,7 +347,6 @@
                         Każda pozycja powinna zawierać pełną informację o cytowanej pracy
                         (autorzy, tytuł, czasopismo/wydawca, rok, DOI jeśli znany).
                     </hint>
-                    <required></required>
                 </field>
             </row>
         </form>

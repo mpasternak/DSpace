@@ -93,13 +93,12 @@ systemctl restart tomcat
 
 Logi: `$DSPACE/log/dspace.log` (i `catalina.out` Tomcata) — szukaj słów `references` albo `MetadataField`.
 
-## Uwaga: pole jest obecnie WYMAGANE
+## Pole jest opcjonalne
 
-W aktualnej definicji pole ma znacznik `<required/>`, więc przy **nowym** submissionie trzeba
-podać co najmniej jedną pozycję bibliografii. Istniejące rekordy nie są walidowane wstecz, ale
-przy ich edycji formularz może domagać się wypełnienia. Jeśli ma być opcjonalne — usuń `<required/>`
-z obu pól w `submission-forms-parts/form-traditional.xml` i `form-openaire.xml`, zregeneruj plik
-i skopiuj ponownie.
+Pole nie ma znacznika `<required/>`, więc bibliografia jest **opcjonalna** — submission przejdzie
+bez wypełnienia, a stare rekordy nie mają pola i nie trzeba ich uzupełniać. Gdyby kiedyś miało być
+wymagane, dodaj `<required></required>` do obu pól w `submission-forms-parts/form-traditional.xml`
+i `form-openaire.xml`, zregeneruj plik (`python scripts/generate-xinclude-xml.py`) i skopiuj ponownie.
 
 ## Świeża instalacja
 
