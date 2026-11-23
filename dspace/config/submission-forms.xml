@@ -247,6 +247,20 @@
                     <required/>
                 </field>
             </row>
+            <!-- BOOK: Redaktor (książka pod redakcją) -->
+            <row>
+                <field>
+                    <dc-schema>dc</dc-schema>
+                    <dc-element>contributor</dc-element>
+                    <dc-qualifier>editor</dc-qualifier>
+                    <repeatable>true</repeatable>
+                    <label>Redaktor</label>
+                    <type-bind>Book</type-bind>
+                    <input-type>onebox</input-type>
+                    <hint>Dla książki pod redakcją: wpisz nazwisko i imię redaktora (bez dopisku „red.”), a pole „Autor” zostaw puste.</hint>
+                    <required/>
+                </field>
+            </row>
 
             <!-- ARTICLE: Tytuł czasopisma -->
             <row>
